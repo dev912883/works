@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Стирпрофи</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__panel">
+                <a href="#" class="header__logo">Стирпрофи</a>
+                <div class="header__text">Качественный ремонт стиральных машин</div>
+                <button class="button" data-modal="order">Вызвать мастера</button>
+                <div class="header__hours">
+                   <span>Ежедневно</span> с 8:00 до 24:00
+                </div>
+                <a href="tel:+74952419915" class="header__phone">+7 (495) 241-99-15</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li>
+                        <a href="#price-link">Цены</a>
+                    </li>
+                    <li>
+                        <a href="#advantage-link">Почему мы</a>
+                    </li>
+                    <li>
+                        <a href="#brand-link">Бренды</a>
+                    </li>
+                    <li>
+                        <a href="#comment-link">Отзывы</a>
+                    </li>
+                </ul>
+                <button class="button button_mob" data-modal="order">Вызвать мастера</button>
+                <div class="header__hours header__hours_mob">
+                    <span>Ежедневно</span> с 8:00 до 24:00
+                 </div>
+                 <a href="tel:+74952419915" class="header__phone header__phone_mob">+7 (495) 241-99-15</a>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__info">
+                    <div class="promo__left">
+                        <h1 class="promo__title">Ремонт стиральных машин <span>в Москве</span></h1>
+                        <div class="promo__text">
+                            Поломалась стиральная машинка? Закажите прямо сейчас за 0 руб выезд 
+                            мастера по всей территории Москвы
+                        </div>
+                        <form action="#" class="feed-form">
+                            <input class="feed-form__name" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="feed-form__phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                            <button class="button">Вызвать мастера</button>
+                        </form>
+                    </div>
+                    <div class="promo__right">
+                        <img src="img/promo_img.png" alt="#">
+                    </div>
+                </div>
+                <div class="promo__highlights">
+                    <div class="highlights__item">
+                        <img class="highlights__icon" src="img/highlights_1.png" alt="#">
+                        <div class="highlights__info">
+                            <div class="highlights__title">0 руб</div>
+                            <div class="highlights__text">выезд мастера</div>
+                        </div>
+                    </div>
+                    <div class="highlights__item">
+                        <img class="highlights__icon" src="img/highlights_2.png" alt="#">
+                        <div class="highlights__info">
+                            <div class="highlights__title">0 руб</div>
+                            <div class="highlights__text">диагностика</div>
+                        </div>
+                    </div>
+                    <div class="highlights__item">
+                        <img class="highlights__icon" src="img/highlights_3.png" alt="#">
+                        <div class="highlights__info">
+                            <div class="highlights__title">до 3-х лет</div>
+                            <div class="highlights__text">гарантия</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price" id="price-link">
+            <div class="container">
+                <h2 class="section__title">
+                    Цены за ремонт <br>
+                    стиральных машин
+                </h2>
+                <div class="price__items">
+                    <div class="price__item">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Не сливает воду <br>
+                                стиральная машинка
+                            </div>
+                            <div class="price__sum">400 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_1.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_ice price__item_long">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Течет стиральная <br>
+                                машинка
+                            </div>
+                            <div class="price__sum">400 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_1.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_silver price__item_reverse">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Сильно шумит <br>
+                                машинка
+                            </div>
+                            <div class="price__sum">450 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_2.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_gray price__item_reverse price__item_long">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Не открывается <br>
+                                люк
+                            </div>
+                            <div class="price__sum">450 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_3.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_ice">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Сильно греет <br>
+                                воду
+                            </div>
+                            <div class="price__sum">350 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_4.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_silver price__item_long">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Не включается <br>
+                                стиральная машинка
+                            </div>
+                            <div class="price__sum">400 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_5.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_gray price__item_reverse">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Не заливает воду <br>
+                                стиральная машинка
+                            </div>
+                            <div class="price__sum">400 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_6.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="price__item price__item_ice price__item_reverse price__item_long">
+                        <div class="price__info">
+                            <div class="price__subtitle">
+                                Не вращается <br>
+                                барабан
+                            </div>
+                            <div class="price__sum">350 руб</div>
+                            <button class="price__button" data-modal="order">заказать</button>
+                        </div>
+                        <div class="price__img">
+                            <img src="img/price_7.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages" id="advantage-link">
+            <div class="container">
+                <h2 class="section__title">
+                    Почему <span>3487</span> клиентов <br>
+                    выбрали именно нас
+                </h2>
+                <div class="advantages__items">
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img src="img/adv_1.png" alt="#">
+                        </div>
+                        <div class="advantages__subtitle">
+                            Ремонт через час <br>
+                            после обращения
+                        </div>
+                        <div class="advantages__text">
+                            Мы экономим ваше время - в случае раннего обращения мастер готов выехать незамедлительно
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img src="img/adv_2.png" alt="#">
+                        </div>
+                        <div class="advantages__subtitle">
+                            Всего один выезд <br>
+                            к вам на дом
+                        </div>
+                        <div class="advantages__text">
+                            В 96% мастер устраняет проблему за один выезд
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img src="img/adv_3.png" alt="#">
+                        </div>
+                        <div class="advantages__subtitle">
+                            Высокий уровень <br>
+                            сервиса
+                        </div>
+                        <div class="advantages__text">
+                            Только аккуратные, адекватные и трезвые мастера выполняют работу
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img src="img/adv_4.png" alt="#">
+                        </div>
+                        <div class="advantages__subtitle">
+                            Гарантия на все <br>
+                            виды работ
+                        </div>
+                        <div class="advantages__text">
+                            В случае возникновения проблем - выезд и устранение, бесплатно, но в 99% это не требуется
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands" id="brand-link">
+            <div class="container">
+                <h2 class="section__title">
+                    Ремонтируем стиральные <br>
+                    машины <span>любых марок</span>
+                </h2>
+                <div class="brands__slider">
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/samsung.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/bosch.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/zanussi.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/indesit.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/beko.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/candy.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/samsung.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/bosch.png" alt="#">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brands__slide">
+                            <img src="img/zanussi.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comment" id="comment-link">
+            <div class="container">
+                <h2 class="section__title">Отзывы наших клиентов</h2>
+                <div class="comment__slider">
+                    <div>
+                        <div class="comment__slide">
+                            <div class="comment__img">
+                                <img src="img/ava_1.png" alt="#">
+                            </div>
+                            <div class="comment__name">Ольга Куликова</div>
+                            <div class="comment__text">Хочу выразить благодарность Вашим сотрудникам, которые приехали и отремонтировали. Теперь знаю куда обращаться!</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comment__slide">
+                            <div class="comment__img">
+                                <img src="img/ava_2.png" alt="#">
+                            </div>
+                            <div class="comment__name">Ольга Куликова</div>
+                            <div class="comment__text">Хочу выразить благодарность Вашим сотрудникам, которые приехали и отремонтировали. Теперь знаю куда обращаться!</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comment__slide">
+                            <div class="comment__img">
+                                <img src="img/ava_1.png" alt="#">
+                            </div>
+                            <div class="comment__name">Ольга Куликова</div>
+                            <div class="comment__text">Хочу выразить благодарность Вашим сотрудникам, которые приехали и отремонтировали. Теперь знаю куда обращаться!</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comment__slide">
+                            <div class="comment__img">
+                                <img src="img/ava_2.png" alt="#">
+                            </div>
+                            <div class="comment__name">Ольга Куликова</div>
+                            <div class="comment__text">Хочу выразить благодарность Вашим сотрудникам, которые приехали и отремонтировали. Теперь знаю куда обращаться!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guarantees">
+            <div class="container">
+                <div class="guarantees__items">
+                    <div class="guarantees__item guarantees__item_blue">
+                        <div class="guarantees__title">
+                            Используем только <br> 
+                            оригинальные запчасти
+                        </div>
+                        <div class="guarantees__text">
+                            Наши сотрудники обязательно проходят внутреннее обучение и тестирование, поэтому мы уверены в их квалификации
+                        </div>
+                    </div>
+                    <div class="guarantees__item guarantees__item_green">
+                        <div class="guarantees__title">
+                            Гарантия на ремонт и <br>
+                            использумые детали
+                        </div>
+                        <div class="guarantees__text">
+                            Магазин в Киеве работает круглосуточно, колл-центр 24/7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="action">
+            <div class="container">
+                <div class="action__box">
+                    <div class="action__left">
+                        <h2 class="section__title">
+                            Остались вопросы, <br>
+                            <span>перезвоним в течении 5 минут</span>
+                        </h2>
+                        <form action="#" class="feed-form">
+                            <input class="feed-form__name" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="feed-form__phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                            <button class="button">Отправить</button>
+                        </form>
+                        <div class="action__text">
+                            Наши специалисты с удовольствием ответят на любые Ваши вопросы, касающиеся ремонта и обслуживание стиральных машин
+                        </div>
+                    </div>
+                    <div class="action__right">
+                        <img src="img/girl.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">Стирпрофи</a>
+                    <div class="footer__text">Качественный ремонт стиральных машин</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__hours">
+                        <span>Ежедневно</span> с 8:00 до 24:00
+                     </div>
+                     <a href="tel:+74952419915" class="footer__phone">+7 (495) 241-99-15</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<div class="overlay">
+		<div class="modal" id="call">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">
+                Закажите звонок <br>
+                прямо сейчас
+            </div>
+            <form action="#" class="feed-form">
+                <input class="feed-form__name" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="feed-form__phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                <button class="button">Заказать звонок</button>
+            </form>
+            <div class="modal__private">Данные не будут переданы 3-м лицам</div>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">
+                Вызовите мастера <br>
+                прямо сейчас
+            </div>
+            <form action="#" class="feed-form">
+                <input class="feed-form__name" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="feed-form__phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                <button class="button">Вызвать мастера</button>
+            </form>
+            <div class="modal__private">Данные не будут переданы 3-м лицам</div>
+        </div>
+		<div class="modal modal_thanks" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Ваша заявка <span>отправлена!</span> </div>
+            <div class="modal__subtitle">Мы свяжемся с Вами в течении 15 минут!</div>
+        </div>
+	</div>
+    <div class="phone-fixed">
+        <img src="img/phone_icon.png" alt="#">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
