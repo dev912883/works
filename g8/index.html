@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>g8</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__left">
+                    <a class="header__logo" href="#">
+                        <img src="img/logo.png" alt="logo">
+                        фитнес <br>
+                        бассейн
+                    </a>
+                    <div class="header__info">
+                        <div class="header__adress">г. Москва, ул. Ивана Сусанина, д. 10А</div>
+                        <div class="header__hours">Пн-Пт: 07:00 - 00:00 / Сб-Вс: 08:00-23:00</div>
+                    </div>
+                    <ul class="header__menu header__menu_fixed">
+                        <li>
+                            <a href="#action-link">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#advantage-link">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#abonement-link">Абонементы</a>
+                        </li>
+                        <li>
+                            <a href="#contacts-link">Адрес</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__right">
+                    <a class="header__phone" href="tel:84959993041">8 (495) 999-30-41</a>
+                    <div class="header__buttons">
+                        <button class="button button_red" data-modal="order">Заказать карту</button>
+                        <button class="button button_black" data-modal="call">Перезвоните мне</button>
+                    </div>
+                    <a href="tel:84959993041" class="header__phone__link">
+                        <img src="img/header_phone.png" alt="phone">
+                    </a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav header__nav_mob">
+            <div class="container">
+                <ul class="header__menu">
+                    <li>
+                        <a href="#action-link">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#advantage-link">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#abonement-link">Абонементы</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-link">Адрес</a>
+                    </li>
+                </ul>
+                <a class="header__phone header__phone_mob" href="tel:84959993041">8 (495) 999-30-41</a>
+                <div class="header__buttons header__buttons_mob">
+                    <button class="button button_red" data-modal="order">Заказать карту</button>
+                    <button class="button button_black" data-modal="call">Перезвоните мне</button>
+                </div>
+                <div class="header__info header__info_mob">
+                    <div class="header__adress">г. Москва, ул. Ивана Сусанина, д. 10А</div>
+                    <div class="header__hours">Пн-Пт: 07:00 - 00:00 / Сб-Вс: 08:00-23:00</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__box">
+                    <div class="promo__left">
+                        <div class="promo__action_mob">
+                            скидки до <span>70%</span>
+                        </div>
+                        <div class="promo__title" id="action-link">Абонементы <br> от <span>7000 ₽</span></div>
+                        <button class="button button_red" data-modal="order">выбрать абонемент</button>
+                        <button class="button button_red button_mob" data-modal="order">купить</button>
+                        <div class="promo__info">
+                            <div class="promo__info__item">
+                                365 дней в году <br>
+                                без выходных <br>
+                                и праздников
+                            </div>
+                            <div class="promo__info__item">
+                                бесплатный <br>
+                                охраняемый <br>
+                                паркинг
+                            </div>
+                            <div class="promo__hours">Пн-Пт: с 07:00 до 00:00/Сб-Вс: с 08:00 до 23:00</div>
+                        </div>
+                    </div>
+                    <div class="promo__right">
+                        <div class="promo__img">
+                            <img src="img/promo_img.png" alt="#">
+                            <div class="round">
+                                <div class="round__title">
+                                    скидки до<br>
+                                    <span>70%</span>
+                                </div>
+                                <div class="round__img">
+                                    <img src="img/round_text.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__action" id="advantage-link">Акция действует до 19 сентября</div>
+                    </div>
+                </div>
+                <div class="running">
+                    <div class="running__text">
+                        <span>Открытие</span> 20 сентября
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantage">
+            <div class="container">
+                <div class="section__title">Преимущества</div>
+                <div class="advantage__box">
+                    <div class="advantage__items_first">
+                        <div class="advantage__item">
+                            <div class="advantage__img">
+                                <img src="img/adv_1.png" alt="#">
+                            </div>
+                            <div class="advantage__subtitle advantage__subtitle_large">
+                                4000 м² <br>
+                                общая площадь <br>
+                                фитнес клуба
+                            </div>
+                            <div class="round">
+                                <div class="round__title">
+                                    20.09.21
+                                </div>
+                                <div class="round__img">
+                                    <img src="img/round_text.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage__items_second">
+                        <div class="advantage__items__group">
+                            <div class="advantage__item">
+                                <div class="advantage__img">
+                                    <img src="img/adv_2.png" alt="#">
+                                </div>
+                                <div class="advantage__subtitle advantage__subtitle_small">
+                                    более 30 <br>
+                                    кардио-тренажеров
+                                </div>
+                            </div>
+                            <div class="advantage__item">
+                                <div class="advantage__img">
+                                    <img src="img/adv_3.png" alt="#">
+                                </div>
+                                <div class="advantage__subtitle advantage__subtitle_small">
+                                    более 50 <br>
+                                    групповых занятий                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantage__item">
+                            <div class="advantage__img">
+                                <img src="img/adv_4.png" alt="#">
+                            </div>
+                            <div class="advantage__subtitle advantage__subtitle_large">
+                                25-метровый <br>
+                                бассейн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantage__items_three">
+                    <div class="advantage__item">
+                        <div class="advantage__img">
+                            <img src="img/adv_5.png" alt="#">
+                        </div>
+                        <div class="advantage__subtitle advantage__subtitle_small">
+                            зал единоборств <br>
+                            с татами                                 
+                        </div>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="advantage__img">
+                            <img src="img/adv_6.png" alt="#">
+                        </div>
+                        <div class="advantage__subtitle advantage__subtitle_small" id="abonement-link">
+                            более 30 персональных <br>
+                            высококлассных тренеров                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="abonements">
+            <div class="container">
+                <div class="section__title">Абонементы</div>
+                <div class="abonements__box">
+                    <div class="abonements__main">
+                        <div class="abonements__item abonements__item_platinum">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">Platinum</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_gold">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">GOLD</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abonements__other">
+                        <div class="abonements__item abonements__item_indi">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">индив</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_duet">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">дуэт</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_trio">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">трио</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_day">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">день</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_kids">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">kids</div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="abonements__item abonements__item_corp">
+                            <div class="abonements__info">
+                                <div class="abonements__subtitle">Клубная карта</div>
+                                <div class="abonements__name">corporate</div>
+                                <div class="abonements__descr">
+                                    от 10 <br>
+                                    человек
+                                </div>
+                            </div>
+                            <div class="abonements__buttons">
+                                <button class="button button_red" data-modal="detail">ПОДРОБНЕЕ</button>
+                                <button class="button button_black" data-modal="order">Купить</button>
+                            </div>
+                        </div>
+                        <div class="round">
+                            <div class="round__title">
+                                скидки до<br>
+                                <span>70%</span>
+                            </div>
+                            <div class="round__img">
+                                <img src="img/round_text.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video" >
+            <div class="video__action_mob">
+                скидки до <span>70%</span>
+            </div>
+            <div class="video__box">
+                <video id="promo_video" src="img/promo_video.mp4" type="video/mp4" width="100%" height="100%" poster="img/video_bg.jpg"></video>
+                <div class="video__overlay"></div>
+                <div class="video__play"></div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="section__title" id="contacts-link">контакты</div>
+                <div class="contacts__box">
+                    <div class="contacts__info">
+                        <div class="contacts__adress">
+                            <div class="contacts__subtitle">адрес</div>
+                            г. Москва <br>
+                            ул. Ивана Сусанина д. 10А <br>
+                            ст. м. Селигерская
+                            <button class="button button_black button_mob">построить маршрут</button>
+                        </div>
+                        <div class="contacts__phone">
+                            <div class="contacts__subtitle">отдел продаж</div>
+                            <a href="tel:84959993041">8(495) 999-30-41</a>
+                            <a href="tel:84959993042">8(495) 999-30-42</a>
+                        </div>
+                        <div class="contacts__hours">
+                            <div class="contacts__subtitle">режим работы</div>
+                            Пн - Пт: с 7:00 до 00:00 <br>
+                            Сб - Вс: с 8:00 до 23:00
+                        </div>
+                        <div class="contacts__social">
+                            <a class="contacts__social__item" href="#">
+                                <svg width="24" height="17" viewBox="0 0 37 27" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.6873 4.9058C35.2752 3.36855 34.0659 2.15559 32.5304 1.74171C29.7247 0.971295 18.4999 0.958754 18.4999 0.958754C18.4999 0.958754 7.27686 0.946212 4.46932 1.68259C2.96432 2.09288 1.7209 3.33271 1.30523 4.86817C0.565275 7.67392 0.558108 13.4933 0.558108 13.4933C0.558108 13.4933 0.550941 19.3413 1.28552 22.1183C1.69761 23.6538 2.90698 24.8668 4.44423 25.2806C7.27865 26.0511 18.473 26.0636 18.473 26.0636C18.473 26.0636 29.6978 26.0761 32.5035 25.3415C34.0372 24.9295 35.2519 23.7183 35.6694 22.1828C36.4112 19.3789 36.4165 13.5613 36.4165 13.5613C36.4165 13.5613 36.4524 7.71155 35.6873 4.9058ZM14.9094 18.8844L14.9183 8.13438L24.2475 13.5183L14.9094 18.8844Z"/>
+                                </svg>                                    
+                            </a>
+                            <a class="contacts__social__item" href="#">
+                                <svg width="29" height="29" viewBox="0 0 44 43" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.1517 5.375H7.48503C6.49423 5.375 5.69336 6.17767 5.69336 7.16667V35.8333C5.69336 36.8223 6.49423 37.625 7.48503 37.625H22.9202V25.155H18.7313V20.2727H22.9202V16.6894C22.9202 12.5237 25.4644 10.2537 29.1911 10.2537C30.4434 10.2501 31.6976 10.3146 32.9446 10.4454V14.7812H30.3736C28.3526 14.7812 27.9584 15.7452 27.9584 17.1552V20.2638H32.7905L32.1634 25.146H27.9566V37.625H36.1517C37.1425 37.625 37.9434 36.8223 37.9434 35.8333V7.16667C37.9434 6.17767 37.1425 5.375 36.1517 5.375Z"/>
+                                    </svg>                                   
+                            </a>
+                            <a class="contacts__social__item" href="#">
+                                <svg width="29" height="29" viewBox="0 0 44 43" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.2117 14.8797C38.192 13.5234 37.9411 12.1778 37.461 10.9093C36.6207 8.7432 34.9096 7.03036 32.7435 6.19186C31.4911 5.72065 30.1671 5.46803 28.8269 5.43936C27.1034 5.36232 26.5569 5.34082 22.1816 5.34082C17.8064 5.34082 17.2456 5.34082 15.5346 5.43936C14.1962 5.46803 12.8721 5.72065 11.6198 6.19186C9.45364 7.03036 7.74081 8.7432 6.90231 10.9093C6.4311 12.1617 6.17669 13.4857 6.1516 14.8241C6.07456 16.5495 6.05127 17.0959 6.05127 21.4712C6.05127 25.8464 6.05127 26.4054 6.1516 28.1183C6.17848 29.4584 6.4311 30.7807 6.90231 32.0367C7.7426 34.201 9.45364 35.9138 11.6216 36.7523C12.8686 37.2397 14.1926 37.5156 15.5364 37.5586C17.2617 37.6356 17.8082 37.6589 22.1834 37.6589C26.5587 37.6589 27.1195 37.6589 28.8305 37.5586C30.1689 37.5317 31.4929 37.2791 32.7471 36.8079C34.9132 35.9676 36.6243 34.2547 37.4646 32.0904C37.9358 30.8362 38.1884 29.514 38.2153 28.172C38.2923 26.4484 38.3156 25.902 38.3156 21.5249C38.312 17.1497 38.312 16.5943 38.2117 14.8797ZM22.1709 29.7451C17.595 29.7451 13.888 26.0382 13.888 21.4622C13.888 16.8863 17.595 13.1794 22.1709 13.1794C26.7432 13.1794 30.4538 16.8863 30.4538 21.4622C30.4538 26.0382 26.7432 29.7451 22.1709 29.7451ZM30.7834 14.8044C29.7138 14.8044 28.852 13.9408 28.852 12.873C28.852 11.8052 29.7138 10.9416 30.7834 10.9416C31.8495 10.9416 32.7131 11.8052 32.7131 12.873C32.7131 13.9408 31.8495 14.8044 30.7834 14.8044Z"/>
+                                    <path d="M22.1709 26.8428C25.1424 26.8428 27.5513 24.4339 27.5513 21.4624C27.5513 18.4909 25.1424 16.082 22.1709 16.082C19.1994 16.082 16.7905 18.4909 16.7905 21.4624C16.7905 24.4339 19.1994 26.8428 22.1709 26.8428Z" />
+                                </svg>                                                                   
+                            </a>
+                            <a class="contacts__social__item" href="#">
+                                <svg width="21" height="21" viewBox="0 0 32 33" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.932 0.863525H20.5223C29.2787 0.863525 31.3635 2.94837 31.3635 11.7047V21.295C31.3635 30.0514 29.2787 32.1363 20.5223 32.1363H10.932C2.17567 32.1363 0.0908203 30.0514 0.0908203 21.295V11.7047C0.0908203 2.94837 2.17567 0.863525 10.932 0.863525Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.7008 11.6375C25.8457 11.1544 25.7008 10.7993 25.0112 10.7993H22.7309C22.1511 10.7993 21.8838 11.106 21.7388 11.4442C21.7388 11.4442 20.5792 14.2707 18.9365 16.1068C18.405 16.6382 18.1634 16.8073 17.8735 16.8073C17.7286 16.8073 17.5188 16.6382 17.5188 16.1551V11.6375C17.5188 11.0577 17.3505 10.7993 16.8673 10.7993H13.2839C12.9216 10.7993 12.7037 11.0684 12.7037 11.3235C12.7037 11.8731 13.525 11.9999 13.6097 13.546V16.904C13.6097 17.6402 13.4767 17.7737 13.1868 17.7737C12.4138 17.7737 10.5334 14.9346 9.41814 11.6858C9.19958 11.0544 8.98036 10.7993 8.39758 10.7993H6.11727C5.46576 10.7993 5.33545 11.106 5.33545 11.4442C5.33545 12.0482 6.10852 15.0438 8.93501 19.0057C10.8193 21.7114 13.4742 23.1781 15.89 23.1781C17.3395 23.1781 17.5188 22.8523 17.5188 22.2912V20.2463C17.5188 19.5948 17.6561 19.4647 18.1151 19.4647C18.4533 19.4647 19.0331 19.6338 20.386 20.9384C21.9321 22.4845 22.187 23.1781 23.0567 23.1781H25.337C25.9885 23.1781 26.3142 22.8523 26.1263 22.2095C25.9207 21.5688 25.1825 20.6392 24.203 19.5372C23.6715 18.9091 22.8743 18.2327 22.6327 17.8944C22.2945 17.4596 22.3911 17.2663 22.6327 16.8798C22.6327 16.8798 25.4109 12.9662 25.7008 11.6375Z" fill="#B20000"/>
+                                    </g>
+                                </svg>                                                                     
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A603efd835f6346a2a926ed6563a7f028c7396f3b130fa8f1e0e9c4fa76337a5d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                <div class="contacts__map__overlay"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a class="footer__logo" href="#">
+                    <img src="img/logo_black.png" alt="logo">
+                    фитнес бассейн
+                </a>
+                <div class="footer__social">
+                    <a class="footer__social__item" href="#">
+                        <svg width="35" height="25" viewBox="0 0 37 27" fill="#B30000" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.6873 4.9058C35.2752 3.36855 34.0659 2.15559 32.5304 1.74171C29.7247 0.971295 18.4999 0.958754 18.4999 0.958754C18.4999 0.958754 7.27686 0.946212 4.46932 1.68259C2.96432 2.09288 1.7209 3.33271 1.30523 4.86817C0.565275 7.67392 0.558108 13.4933 0.558108 13.4933C0.558108 13.4933 0.550941 19.3413 1.28552 22.1183C1.69761 23.6538 2.90698 24.8668 4.44423 25.2806C7.27865 26.0511 18.473 26.0636 18.473 26.0636C18.473 26.0636 29.6978 26.0761 32.5035 25.3415C34.0372 24.9295 35.2519 23.7183 35.6694 22.1828C36.4112 19.3789 36.4165 13.5613 36.4165 13.5613C36.4165 13.5613 36.4524 7.71155 35.6873 4.9058ZM14.9094 18.8844L14.9183 8.13438L24.2475 13.5183L14.9094 18.8844Z"/>
+                        </svg>                                    
+                    </a>
+                    <a class="footer__social__item" href="#">
+                        <svg width="43" height="43" viewBox="0 0 44 43" fill="#B30000" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.1517 5.375H7.48503C6.49423 5.375 5.69336 6.17767 5.69336 7.16667V35.8333C5.69336 36.8223 6.49423 37.625 7.48503 37.625H22.9202V25.155H18.7313V20.2727H22.9202V16.6894C22.9202 12.5237 25.4644 10.2537 29.1911 10.2537C30.4434 10.2501 31.6976 10.3146 32.9446 10.4454V14.7812H30.3736C28.3526 14.7812 27.9584 15.7452 27.9584 17.1552V20.2638H32.7905L32.1634 25.146H27.9566V37.625H36.1517C37.1425 37.625 37.9434 36.8223 37.9434 35.8333V7.16667C37.9434 6.17767 37.1425 5.375 36.1517 5.375Z"/>
+                            </svg>                                   
+                    </a>
+                    <a class="footer__social__item" href="#">
+                        <svg width="43" height="43" viewBox="0 0 44 43" fill="#B30000" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.2117 14.8797C38.192 13.5234 37.9411 12.1778 37.461 10.9093C36.6207 8.7432 34.9096 7.03036 32.7435 6.19186C31.4911 5.72065 30.1671 5.46803 28.8269 5.43936C27.1034 5.36232 26.5569 5.34082 22.1816 5.34082C17.8064 5.34082 17.2456 5.34082 15.5346 5.43936C14.1962 5.46803 12.8721 5.72065 11.6198 6.19186C9.45364 7.03036 7.74081 8.7432 6.90231 10.9093C6.4311 12.1617 6.17669 13.4857 6.1516 14.8241C6.07456 16.5495 6.05127 17.0959 6.05127 21.4712C6.05127 25.8464 6.05127 26.4054 6.1516 28.1183C6.17848 29.4584 6.4311 30.7807 6.90231 32.0367C7.7426 34.201 9.45364 35.9138 11.6216 36.7523C12.8686 37.2397 14.1926 37.5156 15.5364 37.5586C17.2617 37.6356 17.8082 37.6589 22.1834 37.6589C26.5587 37.6589 27.1195 37.6589 28.8305 37.5586C30.1689 37.5317 31.4929 37.2791 32.7471 36.8079C34.9132 35.9676 36.6243 34.2547 37.4646 32.0904C37.9358 30.8362 38.1884 29.514 38.2153 28.172C38.2923 26.4484 38.3156 25.902 38.3156 21.5249C38.312 17.1497 38.312 16.5943 38.2117 14.8797ZM22.1709 29.7451C17.595 29.7451 13.888 26.0382 13.888 21.4622C13.888 16.8863 17.595 13.1794 22.1709 13.1794C26.7432 13.1794 30.4538 16.8863 30.4538 21.4622C30.4538 26.0382 26.7432 29.7451 22.1709 29.7451ZM30.7834 14.8044C29.7138 14.8044 28.852 13.9408 28.852 12.873C28.852 11.8052 29.7138 10.9416 30.7834 10.9416C31.8495 10.9416 32.7131 11.8052 32.7131 12.873C32.7131 13.9408 31.8495 14.8044 30.7834 14.8044Z"/>
+                            <path d="M22.1709 26.8428C25.1424 26.8428 27.5513 24.4339 27.5513 21.4624C27.5513 18.4909 25.1424 16.082 22.1709 16.082C19.1994 16.082 16.7905 18.4909 16.7905 21.4624C16.7905 24.4339 19.1994 26.8428 22.1709 26.8428Z" />
+                        </svg>                                                                   
+                    </a>
+                    <a class="footer__social__item" href="#">
+                        <svg width="31" height="31" viewBox="0 0 32 33" fill="#B30000" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.932 0.863525H20.5223C29.2787 0.863525 31.3635 2.94837 31.3635 11.7047V21.295C31.3635 30.0514 29.2787 32.1363 20.5223 32.1363H10.932C2.17567 32.1363 0.0908203 30.0514 0.0908203 21.295V11.7047C0.0908203 2.94837 2.17567 0.863525 10.932 0.863525Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.7008 11.6375C25.8457 11.1544 25.7008 10.7993 25.0112 10.7993H22.7309C22.1511 10.7993 21.8838 11.106 21.7388 11.4442C21.7388 11.4442 20.5792 14.2707 18.9365 16.1068C18.405 16.6382 18.1634 16.8073 17.8735 16.8073C17.7286 16.8073 17.5188 16.6382 17.5188 16.1551V11.6375C17.5188 11.0577 17.3505 10.7993 16.8673 10.7993H13.2839C12.9216 10.7993 12.7037 11.0684 12.7037 11.3235C12.7037 11.8731 13.525 11.9999 13.6097 13.546V16.904C13.6097 17.6402 13.4767 17.7737 13.1868 17.7737C12.4138 17.7737 10.5334 14.9346 9.41814 11.6858C9.19958 11.0544 8.98036 10.7993 8.39758 10.7993H6.11727C5.46576 10.7993 5.33545 11.106 5.33545 11.4442C5.33545 12.0482 6.10852 15.0438 8.93501 19.0057C10.8193 21.7114 13.4742 23.1781 15.89 23.1781C17.3395 23.1781 17.5188 22.8523 17.5188 22.2912V20.2463C17.5188 19.5948 17.6561 19.4647 18.1151 19.4647C18.4533 19.4647 19.0331 19.6338 20.386 20.9384C21.9321 22.4845 22.187 23.1781 23.0567 23.1781H25.337C25.9885 23.1781 26.3142 22.8523 26.1263 22.2095C25.9207 21.5688 25.1825 20.6392 24.203 19.5372C23.6715 18.9091 22.8743 18.2327 22.6327 17.8944C22.2945 17.4596 22.3911 17.2663 22.6327 16.8798C22.6327 16.8798 25.4109 12.9662 25.7008 11.6375Z" fill="black"/>
+                            </g>
+                        </svg>                                                                     
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__left">
+                    <div class="footer__copyright">© G8 Фитнесс. Бассейн  2021</div>
+                    <a class="footer__policy" href="#">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+		<div class="modal modal_call" id="call">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Заказать звонок</div>
+            <form class="feed-form feed-form_call form_submit" action="#">
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="tel" name="phone" placeholder="Телефон*" required>
+                <div class="modal__personal">
+                    Нажимая на кнопку, вы соглашаетесь 
+                    с политикой обработки персональных данных
+                </div>
+                <button class="button button_red">Отправить</button>
+            </form>
+        </div>
+		<div class="modal modal_thanks" id="thanks">
+            <div class="modal__close">&times;</div>
+            <img src="img/form_done.png" alt="#">
+            <div class="modal__subtitle">
+                Спасибо! <br>
+                Ваша заявка отправлена.
+            </div>
+            <div class="modal__descr">В ближайшее время мы с вами свяжемся!</div>
+            <button class="button button_red button_done">хорошо</button>
+        </div>
+        <div class="modal modal_order" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">заказать карту</div>
+            <form class="feed-form feed-form_order form_submit" action="#">
+                <div class="feed-form__title">Заполните данные</div>
+                <div class="feed-form__group">
+                    <input type="text" name="name" placeholder="Имя*" required>
+                    <input type="tel" name="phone" placeholder="Телефон*" required>
+                </div>
+                <div class="feed-form__group">
+                    <div class="feed-form__select">
+                        <div class="feed-form__title">Выберите карту</div>
+                        <select class="select_card" name="cards">
+                            <option value="gold" data-price="52 500 ₽">Gold</option>
+                            <option value="platinum" data-price="62 500 ₽">Platinum</option>
+                            <option value="indi" data-price="72 500 ₽">Индив</option>
+                            <option value="duet" data-price="82 500 ₽">Дуэт</option>
+                            <option value="trio" data-price="92 500 ₽">Трио</option>
+                            <option value="day" data-price="102 500 ₽">День</option>
+                            <option value="kids" data-price="202 500 ₽">Kids</option>
+                            <option value="corp" data-price="302 500 ₽">Corporate</option>
+                        </select>
+                    </div>
+                    <div class="feed-form__select">
+                        <div class="feed-form__title">Количество месяцев</div>
+                        <select class="select_period" name="period">
+                            <option value="2">2 месяца</option>
+                            <option value="6">6 месяцев</option>
+                            <option value="12">12 месяцев</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="feed-form__group">
+                    <div class="modal__personal">
+                        <div class="feed-form__price">52 500 ₽</div>
+                        Нажимая на кнопку, вы соглашаетесь 
+                        с политикой обработки персональных данных
+                    </div>
+                    <button class="button button_red">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal modal-detail" id="detail">
+            <div class="modal__close">&times;</div>
+            <div class="modal-detail__box">
+                <div class="modal-detail__left">
+                    <div class="modal-detail__abonement">
+    
+                    </div>
+                    <button class="button button_red" data-modal="order-inner">Заказать клубную карту</button>
+                    <div class="modal-detail__descr">
+                        ПОДРОБНЕЕ О СКИДКАХ И АКЦИЯХ <br>
+                        УЗНАВАЙТЕ В ДЕПАРТАМЕНТЕ ОТДЕЛА ПРОДАЖ. <br>
+                        ТЕЛ: 8 (495) 999-30-41 / 8 (495) 999-30-42
+                    </div>
+                </div>
+                <div class="modal-detail__right">
+                    <div class="modal__subtitle">клубная карта</div>
+                    <div class="modal-detail__name">GOLD</div>
+                    <div class="modal-detail__price">
+                        СТОИМОСТЬ 105 000  ₽
+                        <div class="button" data-modal="order-inner">выбрать</div>
+                    </div>
+                    <div class="modal-detail__hours">
+                        ПОСЕЩЕНИЕ — ЕЖЕДНЕВНО: <br>
+                        БУДНИЕ 07:00- 24:00, ВЫХ. ДНИ 08:00-23:00
+                    </div>
+                    <button class="button button_red button_mob">Заказать клубную карту</button>
+                    <div class="modal-detail__descr modal-detail__descr_mob">
+                        ПОДРОБНЕЕ О СКИДКАХ И АКЦИЯХ <br>
+                        УЗНАВАЙТЕ В ДЕПАРТАМЕНТЕ ОТДЕЛА ПРОДАЖ. <br>
+                        ТЕЛ: 8 (495) 999-30-41 / 8 (495) 999-30-42
+                    </div>
+                    <ul class="modal-detail__options">
+                        <li>Бассейн 25 метров</li>
+                        <li>Тренажерный зал</li>
+                        <li>Кардиозона</li>
+                        <li>Зона свободных весов</li>
+                        <li>10% Скидка на услуги косметологии и СПА</li>
+                        <li>Аквааэробика</li>
+                        <li>Групповые занятия (более 40 направлений)</li>
+                        <li>Зал групповых программ</li>
+                        <li>Зал йоги/пилатес</li>
+                        <li>Зона функционального тренинга</li>
+                        <li>Боксерский ринг</li>
+                        <li>Групповые программы по единоборствам</li>
+                        <li>Зона кроссфит</li>
+                        <li>Посещение банного комплекса (финская сауна, турецкий хаммам, соляная пещера)</li>
+                        <li>Вводный инструктаж (любая Зона)</li>
+                        <li>Консультация тренера</li>
+                        <li>Просторные раздевалки</li>
+                        <li>Сейфовые ячейки</li>
+                        <li>Кулер с водой в раздевалке</li>
+                        <li>Зона бокса (10 боксерских груш)</li>
+                        <li>Зона отдыха</li>
+                        <li>Бесплатный Wi-fi</li>
+                        <li>Полотенце/халат</li>
+                        <li>26 занятий с персональным тренером (любой зоны) (срок действия 3 месяца);</li>
+                        <li>3 гостевых визитов;</li>
+                        <li>Заморозка карты 45 дней;</li>
+                        <li>Персональный шкафчик;</li>
+                        <li>30% скидки на продление членства;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
