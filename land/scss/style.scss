@@ -1,0 +1,231 @@
+// Common styles
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    max-width: 1920px;
+    background: #F9FAFC;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+// Header
+.header {
+    padding: 10px 0;
+    box-shadow: 0px 0px 4px rgba(16, 24, 31, 0.25);
+    &__logo {
+        margin-left: 50px;
+        font-size: 18px;
+        color: #10181F;
+        img {
+            margin-right: 15px;
+        }
+        &:hover {
+            color: #10181F;
+            text-decoration: none;
+        }
+    }
+}
+// Promo
+.promo {
+    height: 540px;
+    &__box {
+        display: flex;
+        background: linear-gradient(180deg, #BAD2F4 0%, #BABBEF 100%);
+    }
+    &__left {
+        margin: 100px 0 0 95px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 64px;
+        color: #10181F;
+    }
+    &__rating {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        &__stars {
+            margin-right: 10px;
+            img {
+                width: 19px;
+                height: 19px;
+            }
+        }
+        &__text {
+            position: relative;
+            top: 2px;
+            font-size: 16px;
+            color: #10181F;
+        }
+    }
+    &__button {
+        margin-top: 40px;
+        display: block;
+    }
+    &__img {
+        position: relative;
+        bottom: -45px;
+        right: 10px;
+    }
+}
+
+// Tools
+.tools {
+    padding: 140px 0 80px;
+    background-color: #fff;
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 55px;
+        text-align: center;
+        color: #10181F;
+    }
+    &__box {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        margin-right: 30px;
+    }
+    &__item {
+        margin-top: 30px;
+        display: flex;
+        width: 460px;
+    }
+    &__icon {
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 67px;
+        height: 67px;
+        background-color: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 30px;
+        color: #10181F;
+    }
+    &__text {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #10181F;
+    }
+}
+
+// Feedback
+.feedback {
+    margin-top: 100px;
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 55px;
+        text-align: center;
+        color: #10181F;
+    }
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-right: 20px;
+        padding: 27px 22px;
+        width: 360px;
+        min-height: 235px;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+    &__name {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+    }
+}
+
+// App
+.app {
+    margin-top: 100px;
+    &__box {
+        margin-left: auto;
+        margin-right: 80px;
+        display: flex;
+        width: 65%;
+    }
+    &__left {
+        margin-right: 10px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #10181F;
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #10181F;
+    }
+    &__button {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+// Footer
+.footer {
+    margin-top: 60px;
+    padding-bottom: 35px;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        li {
+            margin-right: 38px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            color: #10181F;
+        }
+    }
+    &__copyright {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #C4C4C4;
+    }
+}
+
+@import 'media';
