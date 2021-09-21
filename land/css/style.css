@@ -58,7 +58,8 @@ body {
       color: #10181F; }
   .promo__button {
     margin-top: 40px;
-    display: block; }
+    display: block;
+    text-align: center; }
   .promo__img {
     position: relative;
     bottom: -45px;
