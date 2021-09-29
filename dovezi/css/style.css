@@ -475,7 +475,7 @@ a {
 }
 
 a:hover {
-  color: #6FAA00;
+  color: #16A13A;
   text-decoration: none;
 }
 
@@ -491,7 +491,7 @@ a:hover {
 }
 
 .button_green {
-  background: #6FAA00;
+  background: #16A13A;
   color: #FFFFFF;
 }
 
@@ -508,7 +508,7 @@ a:hover {
 }
 
 .button_white:hover {
-  background: #6FAA00;
+  background: #16A13A;
   border: 1px solid transparent;
   color: #FFFFFF;
 }
@@ -579,7 +579,7 @@ a:hover {
 }
 
 .header__menu ul a:hover {
-  color: #6FAA00;
+  color: #16A13A;
   text-decoration: none;
 }
 
@@ -656,7 +656,7 @@ a:hover {
 }
 
 .sentence {
-  padding: 35px 115px 35px 30px;
+  padding: 35px 60px 35px 30px;
   position: relative;
   bottom: -100px;
   background: #fff;
@@ -677,6 +677,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sentence__form__input-box {
@@ -713,17 +716,18 @@ a:hover {
 
 .sentence__form .button {
   padding: 7px 60px;
+  min-width: 335px;
   text-transform: uppercase;
 }
 
 .sentence__bottom {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -752,18 +756,29 @@ a:hover {
 }
 
 .sentence__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 335px;
+  min-height: 40px;
+  font-weight: 500;
   font-size: 16px;
-  color: #000000;
+  color: #16A13A;
+  border: 1px solid #16A13A;
+  border-radius: 3px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
-.sentence__contact img {
-  margin-right: 5px;
-}
-
-.sentence__contact__mob {
-  display: none;
+.sentence__contact:hover {
+  color: #fff;
+  background: #16A13A;
 }
 
 .sentence__second .sentence {
@@ -771,6 +786,8 @@ a:hover {
   padding-right: 50px;
   position: static;
   background: #F7F7F7;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .sentence__second .sentence__title {
@@ -785,10 +802,6 @@ a:hover {
   padding: 7px 30px;
 }
 
-.sentence__second .sentence__contact {
-  margin-right: 60px;
-}
-
 .section__title {
   font-weight: 500;
   font-size: 36px;
@@ -800,7 +813,7 @@ a:hover {
 }
 
 .feedback__items {
-  margin-top: 25px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -811,7 +824,7 @@ a:hover {
 
 .feedback__item {
   max-width: 590px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ededed;
 }
 
 .feedback__item__top {
@@ -826,7 +839,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #f4f4f4;
+  background: #ededed;
 }
 
 .feedback__item__bottom {
@@ -1052,7 +1065,7 @@ a:hover {
 }
 
 .feedback__customer__comment__link:hover {
-  color: #6FAA00;
+  color: #16A13A;
 }
 
 .feedback__customer__economy {
@@ -1087,11 +1100,11 @@ a:hover {
 }
 
 .shops {
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
 .shops-tech {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .shops-clothes {
@@ -1104,7 +1117,7 @@ a:hover {
 }
 
 .shops__items {
-  margin-top: 20px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,7 +1129,7 @@ a:hover {
 .shops__item {
   margin: 0 7px;
   width: 275px;
-  border: 2px solid #f4f4f4;
+  border: 1px solid #ededed;
 }
 
 .shops__img {
@@ -1134,7 +1147,7 @@ a:hover {
 }
 
 .shops__img img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
 }
 
@@ -1144,7 +1157,7 @@ a:hover {
   display: block;
   font-size: 16px;
   color: #000000;
-  border-top: 2px solid #f4f4f4;
+  border-top: 2px solid #ededed;
 }
 
 .shops__link:before {
@@ -1155,16 +1168,15 @@ a:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: block;
-  width: 35px;
-  height: 35px;
-  background: url(../img/arrow_green.png) no-repeat;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
+  width: 8px;
+  height: 12px;
+  background: url(../img/shop_arrow_black.png) no-repeat;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .shops__link:hover:before {
-  -webkit-transform: translate(7px, -50%);
-          transform: translate(7px, -50%);
+  background: url(../img/shop_arrow_green.png) no-repeat;
 }
 
 .shops__read-more {
@@ -1184,7 +1196,7 @@ a:hover {
 }
 
 .products__descr {
-  margin-top: 15px;
+  margin-top: 25px;
   max-width: 40%;
   font-size: 16px;
   line-height: 19px;
@@ -1192,7 +1204,7 @@ a:hover {
 }
 
 .products__slider {
-  margin-top: 50px;
+  margin-top: 60px;
   padding-bottom: 60px;
   width: calc(100vw - (100vw - 1183px) / 2);
   overflow: hidden;
@@ -1244,7 +1256,7 @@ a:hover {
   padding: 20px;
   position: relative;
   min-height: 430px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ededed;
 }
 
 .products__img {
@@ -1305,7 +1317,7 @@ a:hover {
 }
 
 .how-work__box {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .how-work__tabs {
@@ -1315,11 +1327,12 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #ededed;
 }
 
 .how-work__tabs li {
   margin-right: 40px;
+  margin-bottom: -1px;
   padding: 0 30px 3px 30px;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
@@ -1331,7 +1344,7 @@ a:hover {
 }
 
 .how-work__tabs li.active {
-  border-bottom: 5px solid #6FAA00;
+  border-bottom: 4px solid #16A13A;
   border-radius: 3px;
   color: #000;
 }
@@ -1348,7 +1361,7 @@ a:hover {
   margin-right: 45px;
   padding-right: 50px;
   max-width: 50%;
-  border-right: 2px solid #f4f4f4;
+  border-right: 2px solid #ededed;
 }
 
 .how-work__tabcontent__right {
@@ -1411,7 +1424,7 @@ a:hover {
 }
 
 .advantage__descr {
-  margin-top: 15px;
+  margin-top: 30px;
   width: 54%;
   font-size: 20px;
   line-height: 27px;
@@ -1419,6 +1432,7 @@ a:hover {
 }
 
 .advantage__items {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1451,10 +1465,10 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 110px;
-  height: 110px;
-  background: #F7F7F7;
-  border-radius: 50%;
+}
+
+.advantage__icon img {
+  max-width: 100%;
 }
 
 .advantage__subtitle {
@@ -1572,7 +1586,7 @@ a:hover {
 }
 
 .footer__links ul a:hover {
-  color: #6FAA00;
+  color: #16A13A;
   text-decoration: none;
 }
 
@@ -1634,21 +1648,17 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.feedback-page {
-  padding-bottom: 200px;
-}
-
 .feedback-page .header {
   -webkit-box-shadow: 0px 1px 9px #E5E5E5;
           box-shadow: 0px 1px 9px #E5E5E5;
 }
 
 .feedback-page .feedback {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .feedback-page .feedback__descr {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 22px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
@@ -1669,7 +1679,7 @@ a:hover {
 }
 
 .feedback-page .feedback__sort {
-  margin-top: 40px;
+  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1734,7 +1744,7 @@ a:hover {
 
 @media (min-width: 991px) and (max-width: 1200px) {
   .feedback {
-    margin-top: 180px;
+    margin-top: 220px;
   }
   .feedback__item__top {
     padding: 11px 11px 45px;
@@ -1782,38 +1792,36 @@ a:hover {
     width: 90%;
   }
   .sentence {
-    padding: 35px 50px 35px 35px;
     bottom: -80px;
+  }
+  .sentence__bottom {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .sentence__form .input__clear {
     right: 15px;
   }
   .sentence__form__input-box {
+    margin-right: 35px;
     width: 100%;
   }
   .sentence__form input {
     width: 100%;
   }
   .sentence__form .button {
-    margin: 0 35px;
+    min-width: 250px;
   }
   .sentence__advantage__item {
     font-size: 14px;
   }
   .sentence__contact {
+    margin-left: 0;
+    min-width: 250px;
     font-size: 14px;
-  }
-  .sentence__contact img {
-    width: 35px;
   }
   .sentence__second .sentence {
     margin-top: 90px;
-  }
-  .sentence__second .sentence__form .button {
-    margin-right: 0;
-  }
-  .sentence__second .sentence__contact {
-    margin-right: 0;
   }
   .feedback__carrier__earn {
     width: 160px;
@@ -1836,11 +1844,6 @@ a:hover {
     padding: 23px 15px;
     font-size: 14px;
   }
-  .shops__link:before {
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-  }
   .how-work {
     margin-top: 100px;
   }
@@ -1860,11 +1863,6 @@ a:hover {
   }
   .advantage__icon {
     margin-right: 20px;
-    min-width: 100px;
-    height: 100px;
-  }
-  .advantage__icon img {
-    width: 45px;
   }
   .advantage__text {
     margin-top: 15px;
@@ -1963,10 +1961,10 @@ a:hover {
     margin-top: 5px;
     margin-right: 0;
   }
-  .header__logo, .header__basket {
+  .header__basket {
     display: none;
   }
-  .header__logo__mob, .header__basket__mob {
+  .header__basket__mob {
     display: block;
   }
   .header__fav {
@@ -2030,19 +2028,6 @@ a:hover {
   .sentence__form input {
     font-size: 13px;
   }
-  .sentence__form .button {
-    margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 180px;
-  }
   .sentence__bottom {
     margin-top: 10px;
   }
@@ -2055,37 +2040,8 @@ a:hover {
   .sentence__advantage__item {
     margin-top: 10px;
   }
-  .sentence__contact {
-    display: none;
-  }
-  .sentence__contact__mob {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 180px;
-    height: 35px;
-    font-weight: 500;
-    font-size: 14px;
-    color: #6FAA00;
-    border: 1px solid #6FAA00;
-    border-radius: 3px;
-  }
-  .sentence__contact__mob:hover {
-    color: #fff;
-    background: #6FAA00;
-  }
   .sentence__second .sentence__form .button {
-    font-size: 10px;
-    width: 252px;
-  }
-  .sentence__second .sentence__contact__mob {
-    width: 186px;
+    font-size: 13px;
   }
   .section__title {
     font-size: 24px;
@@ -2114,7 +2070,7 @@ a:hover {
     font-size: 20px;
   }
   .shops__items {
-    margin: 0 auto;
+    margin: 15px auto 0;
     width: 85%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2124,6 +2080,9 @@ a:hover {
   }
   .shops__item {
     margin: 20px 15px 0;
+  }
+  .shops-tech {
+    margin-top: 30px;
   }
   .products {
     margin-top: 70px;
@@ -2212,11 +2171,6 @@ a:hover {
   }
   .advantage__icon {
     margin-right: 15px;
-    min-width: 80px;
-    height: 80px;
-  }
-  .advantage__icon img {
-    width: 40px;
   }
   .advantage__subtitle {
     font-size: 18px;
@@ -2312,7 +2266,7 @@ a:hover {
     color: #075EC4;
   }
   .footer__messenger__mob a:hover {
-    color: #6FAA00;
+    color: #16A13A;
     text-decoration: none;
   }
   .footer__payment img {
@@ -2381,17 +2335,18 @@ a:hover {
   }
   .sentence__form .button {
     margin-top: 20px;
-    margin-left: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 37px;
     font-size: 12px;
   }
   .sentence__advantage__item {
     margin-right: 0;
   }
-  .sentence__contact__mob {
+  .sentence__contact {
     position: absolute;
     bottom: -45px;
-    width: 100%;
+    min-width: 100%;
+    min-height: 37px;
     font-size: 12px;
   }
   .sentence__second .sentence {
@@ -2402,14 +2357,6 @@ a:hover {
     max-width: 100%;
     font-size: 15px;
     line-height: 22px;
-  }
-  .sentence__second .sentence__form .button {
-    font-size: 12px;
-    width: 100%;
-  }
-  .sentence__second .sentence__contact__mob {
-    width: 100%;
-    font-size: 12px;
   }
   .section__title {
     font-size: 22px;
@@ -2515,17 +2462,13 @@ a:hover {
             align-items: flex-start;
   }
   .advantage__icon {
-    margin-right: 10px;
-    min-width: 65px;
-    height: 65px;
-  }
-  .advantage__icon img {
-    width: 35px;
+    margin-right: 13px;
   }
   .advantage__subtitle {
     font-size: 15px;
   }
   .advantage__text {
+    margin-top: 10px;
     font-size: 13px;
   }
   .footer__box {
@@ -2599,13 +2542,10 @@ a:hover {
     font-size: 12px;
   }
   .sentence__form .button {
-    font-size: 12px;
+    padding: 0;
   }
   .sentence__advantage__item {
     font-size: 11px;
-  }
-  .sentence__contact__mob {
-    font-size: 12px;
   }
   .sentence__second .sentence {
     margin-top: 50px;
@@ -2617,15 +2557,11 @@ a:hover {
     line-height: 22px;
   }
   .sentence__second .sentence__form .button {
+    padding: 0;
     font-size: 11px;
-    width: 100%;
-  }
-  .sentence__second .sentence__contact__mob {
-    width: 100%;
-    font-size: 12px;
   }
   .feedback {
-    margin-top: 510px;
+    margin-top: 480px;
   }
   .feedback__subtitle {
     font-size: 11px;
@@ -2735,7 +2671,7 @@ a:hover {
     font-size: 12px;
   }
   .shops {
-    margin-top: 40px;
+    margin-top: 50px;
   }
   .shops__subtitle {
     font-size: 18px;
@@ -2833,8 +2769,8 @@ a:hover {
   .advantage__item {
     width: auto;
   }
-  .advantage__text {
-    margin-top: 10px;
+  .advantage__icon {
+    width: 45px;
   }
   .sale {
     margin-top: 50px;
@@ -2885,12 +2821,24 @@ a:hover {
   .footer__payment {
     margin-top: 20px;
   }
+  .feedback-page .feedback {
+    margin-top: 60px;
+  }
   .feedback-page .feedback__descr {
     font-size: 13px;
+  }
+  .feedback-page .feedback__sort {
+    margin-top: 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 @media (max-width: 450px) {
+  .feedback {
+    margin-top: 515px;
+  }
   .feedback__carrier__earn {
     width: 60%;
   }
