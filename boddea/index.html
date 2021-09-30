@@ -15,7 +15,7 @@
 
     <section class="promo">
         <div class="container">
-            <header class="header">
+            <header class="header overflow-hidden">
                 <a href="#" class="header__logo__mob">
                     <img src="img/logo.png" alt="boddea">
                 </a>
@@ -41,8 +41,10 @@
                                 <a href="#">Контакты</a>
                             </li>
                             <li class="header__lang">
-                                <button class="header__lang__switcher header__lang__switcher-ru active">ru</button>
-                                <button class="header__lang__switcher header__lang__switcher-en">en</button>
+                                <select class="header__lang__switcher">
+                                    <option value="ru">ru</option>
+                                    <option value="en">en</option>
+                                </select>
                             </li>
                         </ul>
                     </nav>
@@ -72,7 +74,7 @@
                 </div>
             </header>
             <div class="promo__box">
-                <h1 class="promo__title">Научитесь <span class="line">есть</span> <span>осознанно</span></h1>
+                <h1 class="promo__title">Научитесь <span class="title__line">есть</span> <span class="promo__title__regular">осознанно</span></h1>
                 <h2 class="promo__subtitle">Психология - ключ к прочным изменениям</h2>
                 <div class="promo__links">
                     <a href="#" class="btn btn-red">Похудеть навсегда</a>
