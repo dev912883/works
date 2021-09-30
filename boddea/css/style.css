@@ -3,11 +3,6 @@
   line-height: 100%;
 }
 
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -288,12 +283,12 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 130px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 .promo__title {
   font-weight: 700;
-  font-size: 92px;
+  font-size: 88px;
   color: #000000;
   text-align: center;
 }
@@ -327,6 +322,19 @@ p {
 
 .promo__copyright {
   display: none;
+}
+
+.promo__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social {
@@ -876,6 +884,7 @@ p {
 @media (max-width: 1140px) {
   .header {
     position: relative;
+    z-index: 3;
     padding-top: 30px;
   }
   .header__button {
@@ -905,7 +914,7 @@ p {
             justify-content: center;
     position: absolute;
     top: 30px;
-    right: 15px;
+    right: 0;
     z-index: 999;
     width: 75px;
     height: 42px;
@@ -966,7 +975,7 @@ p {
     transition: 0.4s all;
   }
   .header__box.active {
-    right: -10px;
+    right: -15px;
   }
   .header__menu {
     display: -webkit-box;
@@ -977,10 +986,10 @@ p {
             justify-content: center;
     width: 100%;
     margin-top: 35px;
-    padding: 120px 0;
     border-top: 1px solid #E2E2E2;
   }
   .header__menu ul {
+    padding-top: 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1006,7 +1015,7 @@ p {
     height: 28px;
     background: url(../img/menu_item_arrow.svg) no-repeat;
   }
-  .header__menu ul li a {
+  .header__menu ul a {
     font-weight: 500;
     font-size: 28px;
     color: #0A0A0A;
@@ -1043,8 +1052,28 @@ p {
   .header .social__mob .social__item svg {
     width: 30px;
   }
+  .promo {
+    position: relative;
+  }
+  .promo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .promo__box {
+    position: relative;
+    z-index: 2;
+  }
   .promo__title {
+    max-width: 80%;
     font-size: 70px;
+    line-height: 75px;
   }
   .promo__subtitle {
     font-size: 32px;
@@ -1057,17 +1086,14 @@ p {
   .promo__links .btn:before {
     display: none;
   }
+  .promo__links a:first-child {
+    margin-right: 60px;
+  }
   .promo__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1077,34 +1103,74 @@ p {
   .promo .social {
     margin-top: 0;
   }
+  .promo .social__item {
+    -webkit-box-shadow: 0px 3px 3px rgba(11, 11, 11, 0.1);
+            box-shadow: 0px 3px 3px rgba(11, 11, 11, 0.1);
+  }
   .promo__logo {
     margin-top: 0;
   }
   .promo__copyright {
     display: block;
     font-size: 16px;
-    color: #888888;
+    color: #595959;
   }
 }
 
 @media (max-width: 991px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header__logo {
+    margin: 25px 0 0 20px;
+    width: 140px;
+  }
+  .header__logo__mob {
+    width: 150px;
+  }
+  .header .burger {
+    top: 20px;
+  }
+  .header__menu ul li {
+    margin-top: 25px;
+  }
+  .header__menu ul li:before {
+    left: -25px;
+    width: 10px;
+    height: 18px;
+    background-size: contain;
+  }
+  .header__menu ul a {
+    font-size: 22px;
+  }
+  .header__menu ul .header__lang {
+    top: 10px;
+  }
   .promo__title {
-    font-size: 57px;
+    font-size: 58px;
+    line-height: 65px;
   }
   .promo__subtitle {
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 26px;
   }
   .promo__links .btn {
-    font-size: 19px;
+    width: 240px;
+    font-size: 18px;
+  }
+  .promo__links a:first-child {
+    margin-right: 40px;
   }
   .promo__logo {
     display: none;
   }
   .promo .social__item {
+    margin-right: 25px;
     width: 47px;
     height: 47px;
-    -webkit-box-shadow: 0px 3px 3px rgba(11, 11, 11, 0.1);
-            box-shadow: 0px 3px 3px rgba(11, 11, 11, 0.1);
+  }
+  .promo .social__item:last-child {
+    margin-right: 0;
   }
   .promo .social__item svg {
     width: 23px;
@@ -1112,15 +1178,28 @@ p {
 }
 
 @media (max-width: 767px) {
-  .header__logo__mob {
-    width: 160px;
+  .header .burger {
+    width: 65px;
+    height: 40px;
+  }
+  .header .burger span {
+    margin-top: 4px;
+    width: 24px;
+    height: 2px;
+  }
+  .header__box {
+    width: 100vw;
   }
   .promo__title {
     font-size: 45px;
+    line-height: 50px;
   }
   .promo__subtitle {
-    margin-top: 20px;
-    font-size: 23px;
+    margin-top: 15px;
+    font-size: 21px;
+  }
+  .promo__links {
+    margin-top: 60px;
   }
   .promo__links .btn {
     width: 220px;
@@ -1133,20 +1212,22 @@ p {
   .promo .social__item {
     margin-right: 20px;
   }
-  .promo .social__item:last-child {
-    margin-right: 0;
-  }
-  .promo .social__item svg {
-    width: 25px;
-  }
   .promo__copyright {
     font-size: 14px;
   }
 }
 
 @media (max-width: 575px) {
+  .header__logo__mob {
+    width: 130px;
+  }
+  .promo__box {
+    margin-top: 100px;
+  }
   .promo__title {
-    font-size: 45px;
+    max-width: 100%;
+    font-size: 41px;
+    line-height: 45px;
   }
   .promo__subtitle {
     margin-top: 15px;
@@ -1161,7 +1242,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 35px;
+    margin-top: 20px;
   }
   .promo__links .btn {
     margin-top: 20px;
@@ -1179,13 +1260,11 @@ p {
     margin-top: 100px;
   }
   .promo .social__item {
-    margin-right: 20px;
-  }
-  .promo .social__item:last-child {
-    margin-right: 0;
+    width: 42px;
+    height: 42px;
   }
   .promo .social__item svg {
-    width: 25px;
+    width: 21px;
   }
   .promo__copyright {
     margin-top: 30px;
