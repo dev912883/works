@@ -774,6 +774,7 @@ a:hover {
   border-radius: 3px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  text-transform: uppercase;
 }
 
 .sentence__contact:hover {
