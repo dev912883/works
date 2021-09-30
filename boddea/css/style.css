@@ -13,6 +13,27 @@ p {
   margin: 0;
 }
 
+.hide {
+  opacity: 0 !important;
+}
+
+.overlay-menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -884,7 +905,7 @@ p {
 @media (max-width: 1140px) {
   .header {
     position: relative;
-    z-index: 3;
+    z-index: 11;
     padding-top: 30px;
   }
   .header__button {
@@ -897,6 +918,8 @@ p {
   .header__logo__mob {
     display: block;
     width: 180px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
   }
   .header .burger {
     display: -webkit-box;
@@ -1068,7 +1091,7 @@ p {
   }
   .promo__box {
     position: relative;
-    z-index: 2;
+    z-index: 10;
   }
   .promo__title {
     max-width: 80%;

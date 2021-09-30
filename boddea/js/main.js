@@ -18,23 +18,31 @@ $(document).ready(function(){
 
     // Menu
     const menu = $('.header__box'),
-    menuItem = $('.header__menu ul li a'),
+    menuItem = $('.header__menu ul li'),
     hamburger = $('.burger');
 
     hamburger.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
+        $('body').toggleClass('overlay-menu');
+        $('.header__logo__mob').toggleClass('hide');
     });
 
     menuItem.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
-        // if ($('body').hasClass('overflow-hidden')) {
-        //   $('body').toggleClass('overflow-hidden');
-        // }
-        // else {
-        //   return;
-        // }
+        if ($('body').hasClass('overlay-menu')) {
+          $('body').toggleClass('overlay-menu');
+        }
+        else {
+          return;
+        }
+        if ($('.header__logo__mob').hasClass('hide')) {
+            $('.header__logo__mob').toggleClass('hide');
+          }
+          else {
+            return;
+          }
     });
 
 });
