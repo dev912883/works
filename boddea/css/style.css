@@ -233,6 +233,7 @@ p {
   font-size: 21px;
   color: #515151;
   cursor: pointer;
+  background: transparent;
 }
 
 .header__button {
