@@ -310,7 +310,7 @@
         position: absolute;
         bottom: 20px;
         left: 0;
-        padding-left: 20px;
+        padding: 0 50px 0 20px;
         width: 100%;
         font-weight: 900;
         font-size: 20px;
@@ -338,6 +338,77 @@
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+ // WhyWe
+.whyWe {
+    padding: 140px 0 190px;
+    background: url(../img/whyWe_bg.png) no-repeat;
+    background-size: cover;
+    &__title {
+        color: #e4e0e0;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 90px;
+    }
+    &__item {
+        position: relative;
+        width: 29%;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 45px;
+            right: -49%;
+            display: block;
+            width: 290px;
+            height: 1px;
+            background: #FFC652;
+        }
+        &:nth-child(4) {
+            margin: 110px 0 0 auto;
+        }
+        &:last-child {
+            margin: 110px auto 0 130px;
+        }
+        &:nth-child(3), &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &__icon {
+        margin: 0 auto;
+        width: 115px;
+        img {
+            max-width: 100%;
+            max-height: 115px;
+        }
+    }
+    &__subtitle {
+        margin-top: 45px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin-top: 25px;
+        font-family: 'Montserrat';
+        font-size: 23px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+}
+
+ //About  
+.about {
+    padding: 140px 0 170px;
+    background: url(../img/about_bg.png) no-repeat;
+    background-size: cover;
 }
 
 // Modal Start
