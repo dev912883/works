@@ -41,4 +41,27 @@ $(document).ready(function(){
 	$('.header__menu__drop').on('click', function() {
 		$('.header__menu__drop__list').toggleClass('active');
 	});
+
+	// Tabs
+	$('ul.news__tabs').on('click', 'li:not(.active)', function() {
+		$(this)
+			.addClass('active').siblings().removeClass('active').closest('div.container').find('div.news__tabcontent').removeClass('active').eq($(this).index()).addClass('active');
+	});
+
+	// Accordeon
+	const acc = document.getElementsByClassName("faq__item__button");
+	let i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			let panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} else {
+				panel.style.display = "block";
+			}
+		});
+	}
+	
 });
