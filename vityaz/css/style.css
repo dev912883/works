@@ -1286,7 +1286,7 @@ template {
   background: #FBFCFC;
 }
 
-.geo__bg__box {
+.geo__bg {
   margin: 0 auto;
   padding: 170px 0;
   max-width: 1920px;
@@ -1302,6 +1302,9 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 45px;
 }
 
@@ -1354,14 +1357,14 @@ template {
   width: 40px;
   height: 40px;
   background: url(../img/about_check.png) no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
-.geo__map {
+.geo__right {
   width: 790px;
 }
 
-.geo__map img {
+.geo__right img {
   max-width: 100%;
 }
 
@@ -1400,7 +1403,6 @@ template {
   content: '';
   position: absolute;
   display: block;
-  background-size: 100%;
 }
 
 .news__item__first:before {
@@ -1411,6 +1413,7 @@ template {
   width: 75px;
   height: 90px;
   background: url(../img/news_item_bg_1.png) no-repeat;
+  background-size: 100%;
 }
 
 .news__item__second:before {
@@ -1419,6 +1422,7 @@ template {
   width: 150px;
   height: 125px;
   background: url(../img/news_item_bg_2.png) no-repeat;
+  background-size: 100%;
 }
 
 .news__subtitle {
@@ -1572,22 +1576,22 @@ template {
   color: #FFC652;
 }
 
-.footer__links ul li {
+.footer__item ul li {
   margin-top: 10px;
 }
 
-.footer__links ul li:first-child {
+.footer__item ul li:first-child {
   margin-top: 0;
 }
 
-.footer__links ul a {
+.footer__item ul a {
   font-size: 14px;
   color: #FFFFFF;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
-.footer__links ul a:hover {
+.footer__item ul a:hover {
   color: #FFC652;
 }
 
@@ -1737,10 +1741,6 @@ template {
   display: none;
 }
 
-.geo, .news, .faq, .footer {
-  display: none;
-}
-
 @media (max-width: 1800px) {
   .feedback__bg__second {
     background-size: 250px;
@@ -1822,6 +1822,18 @@ template {
   }
   .feedback-form .btn {
     margin-top: 40px;
+  }
+  .geo__bg {
+    background-size: 280px;
+    background-position: 100% 25%;
+  }
+  .geo__right {
+    width: 700px;
+  }
+  .news__item__second:before {
+    bottom: -70px;
+    width: 120px;
+    height: 100px;
   }
 }
 
@@ -1923,6 +1935,12 @@ template {
   .about__img {
     right: 38%;
     width: 860px;
+  }
+  .geo__bg {
+    background-position: 100% 35%;
+  }
+  .geo__right {
+    width: 620px;
   }
 }
 
@@ -2032,6 +2050,43 @@ template {
   }
   .feedback__descr {
     max-width: 100%;
+  }
+  .geo__bg {
+    background-position: 100% 60%;
+  }
+  .geo__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .geo__left {
+    width: 90%;
+  }
+  .geo__right {
+    margin-top: 60px;
+    width: 90%;
+    height: 400px;
+  }
+  .geo__right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .geo__items {
+    padding: 40px 25px;
+  }
+  .geo__item {
+    margin-top: 35px;
+  }
+  .geo__item:before {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -2229,6 +2284,38 @@ template {
   .feedback__right {
     width: 90%;
   }
+  .news__item__second:before {
+    bottom: -45px;
+    width: 90px;
+    height: 75px;
+  }
+  .footer {
+    position: relative;
+  }
+  .footer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__item {
+    width: 50%;
+  }
+  .footer__item ul {
+    height: 0px;
+    overflow: hidden;
+  }
+  .footer__item.active ul {
+    height: auto;
+  }
+  .footer__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2359,6 +2446,39 @@ template {
   .feedback-form .btn {
     padding: 16px 70px;
     font-size: 17px;
+  }
+  .geo__bg {
+    background-position: 100% 60%;
+    background-size: 200px;
+  }
+  .geo__left {
+    width: 100%;
+  }
+  .geo__subtitle {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .geo__district {
+    margin-top: 40px;
+    padding: 15px;
+  }
+  .geo__items {
+    padding: 20px 15px;
+  }
+  .geo__item {
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .geo__item:before {
+    width: 20px;
+    height: 20px;
+  }
+  .geo__right {
+    margin-top: 40px;
+    width: 100%;
+    height: 280px;
   }
 }
 
