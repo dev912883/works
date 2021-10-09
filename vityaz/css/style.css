@@ -404,110 +404,6 @@ template {
   font-style: normal;
 }
 
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
 * {
   font-family: 'Gilroy', sans-serif;
 }
@@ -834,6 +730,7 @@ template {
 .btn:hover {
   background: linear-gradient(86.75deg, #F9A11E 5.26%, #F8B711 99.59%);
   border-bottom: 4px solid transparent;
+  color: #383838;
 }
 
 .services {
@@ -1636,6 +1533,85 @@ template {
   margin-top: 30px;
 }
 
+.payment-page .header__menu ul a {
+  color: #282828;
+}
+
+.payment-page .header__menu ul a:hover {
+  color: #282828;
+}
+
+.payment-page .header__burger {
+  right: 15px;
+}
+
+.payment {
+  padding: 90px 0 160px;
+}
+
+.payment__subtitle {
+  margin-top: 15px;
+  font-size: 36px;
+  color: #898989;
+}
+
+.payment__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.payment__item {
+  position: relative;
+  width: 30%;
+}
+
+.payment__item:after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  right: -45%;
+  display: block;
+  width: 300px;
+  height: 1px;
+  background: #E1E1E1;
+}
+
+.payment__item:last-child:after {
+  display: none;
+}
+
+.payment__number {
+  font-weight: 900;
+  font-size: 285px;
+  line-height: 100%;
+  text-align: center;
+  color: #E6E6E6;
+}
+
+.payment__descr {
+  position: relative;
+  top: -85px;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2A2A2A;
+}
+
+.payment .btn {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+}
+
 @media (max-width: 1800px) {
   .feedback__bg__second {
     background-size: 250px;
@@ -1730,6 +1706,13 @@ template {
     width: 120px;
     height: 100px;
   }
+  .payment__item:after {
+    right: -50%;
+    width: 75%;
+  }
+  .payment-page .header__logo {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -1780,6 +1763,9 @@ template {
   .section__title {
     font-size: 57px;
     line-height: 65px;
+  }
+  .services__title {
+    max-width: 60%;
   }
   .services__descr {
     margin-top: 30px;
@@ -1845,6 +1831,16 @@ template {
   }
   .footer__mail, .footer__adress {
     margin-top: 20px;
+  }
+  .payment__subtitle {
+    font-size: 28px;
+  }
+  .payment__descr {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .payment-page .header__logo {
+    width: 80px;
   }
 }
 
@@ -2339,6 +2335,7 @@ template {
     padding-bottom: 3px;
     max-width: 200px;
     border-bottom: 1px dashed #F8B613;
+    cursor: pointer;
   }
   .footer__subtitle__drop:after {
     content: '';
@@ -2352,7 +2349,6 @@ template {
     height: 10px;
     background: url(../img/menu_arrow.svg) no-repeat;
     background-size: 100%;
-    cursor: pointer;
   }
   .footer__subtitle__drop.active {
     border-bottom: none;
@@ -2382,6 +2378,25 @@ template {
   }
   .footer__mail, .footer__adress {
     margin-top: 10px;
+  }
+  .payment {
+    padding: 70px 0 110px;
+  }
+  .payment__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .payment__descr {
+    top: -65px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .payment .btn {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+  .payment-page .header__logo {
+    width: 65px;
   }
 }
 
@@ -2564,6 +2579,30 @@ template {
   .footer__logo {
     width: 55px;
   }
+  .payment {
+    padding: 60px 0 90px;
+  }
+  .payment__subtitle {
+    font-size: 17px;
+  }
+  .payment__item {
+    width: 40%;
+  }
+  .payment__item:after {
+    display: none;
+  }
+  .payment__number {
+    font-size: 200px;
+  }
+  .payment__descr {
+    top: -45px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .payment .btn {
+    padding: 16px 42px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2636,7 +2675,7 @@ template {
   .services__descr {
     margin-top: 10px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 19px;
   }
   .services__box {
     margin-top: 40px;
@@ -2837,6 +2876,42 @@ template {
   }
   .footer__phone, .footer__mail, .footer__adress {
     font-size: 12px;
+  }
+  .payment-page .header__burger {
+    right: 10px;
+  }
+  .payment-page .header__logo {
+    width: 50px;
+  }
+  .payment {
+    padding: 50px 0 70px;
+  }
+  .payment__subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .payment__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+  .payment__item {
+    width: 100%;
+  }
+  .payment__number {
+    font-size: 170px;
+  }
+  .payment__descr {
+    top: -20px;
+  }
+  .payment .btn {
+    padding: 14px 40px;
   }
 }
 
