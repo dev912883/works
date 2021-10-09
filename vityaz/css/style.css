@@ -65,8 +65,7 @@ h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 abbr[data-original-title],
@@ -700,7 +699,7 @@ template {
 }
 
 .promo__subtitle {
-  font-size: 24px;
+  font-size: 22px;
   color: #FFFFFF;
 }
 
@@ -744,7 +743,7 @@ template {
   border-radius: 20px;
   outline: none;
   border: none;
-  font-size: 24px;
+  font-size: 22px;
   color: #5F5F5F;
 }
 
@@ -755,7 +754,7 @@ template {
   height: 90px;
   background: linear-gradient(86.75deg, #F8B711 5.26%, #F9A11E 99.59%);
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 22px;
   color: #383838;
   border-bottom: 4px solid #E38800;
   -webkit-transition: 0.2s all;
@@ -781,7 +780,7 @@ template {
 .promo__form__text {
   margin-top: 10px;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   color: #FFFFFF;
 }
 
@@ -826,8 +825,7 @@ template {
   border-radius: 10px;
   border-bottom: 4px solid #E38800;
   border-radius: 10px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
   color: #383838;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -899,7 +897,7 @@ template {
   padding: 0 50px 0 20px;
   width: 100%;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 25px;
   color: #FFFFFF;
 }
@@ -1005,8 +1003,8 @@ template {
 .whyWe__descr {
   margin-top: 25px;
   font-family: 'Montserrat';
-  font-size: 23px;
-  line-height: 29px;
+  font-size: 22px;
+  line-height: 28px;
   color: #FFFFFF;
 }
 
@@ -1036,7 +1034,7 @@ template {
 
 .about__history {
   position: relative;
-  padding: 80px 85px 35px;
+  padding: 80px 105px 35px;
   border: 2px dashed #F8B711;
   border-radius: 10px;
 }
@@ -1055,8 +1053,8 @@ template {
 }
 
 .about__history__text {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   color: #000000;
 }
@@ -1095,8 +1093,8 @@ template {
   position: relative;
   margin-top: 40px;
   padding-left: 55px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
 }
 
@@ -1135,8 +1133,8 @@ template {
   padding: 25px 25px 25px 200px;
   border: 2px dashed #F8B711;
   border-radius: 10px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -1217,8 +1215,8 @@ template {
   z-index: 2;
   margin-top: 50px;
   max-width: 415px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -1268,7 +1266,7 @@ template {
   padding: 0 30px;
   width: 100%;
   height: 73px;
-  font-size: 24px;
+  font-size: 22px;
   color: #5E5E5E;
   border: none;
   outline: none;
@@ -1337,8 +1335,8 @@ template {
   position: relative;
   margin-top: 50px;
   padding-left: 55px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
 }
 
@@ -1427,7 +1425,7 @@ template {
 
 .news__subtitle {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
   color: #282828;
 }
@@ -1464,7 +1462,7 @@ template {
   background: transparent;
   border: 1px solid #E38800;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: #E38800;
   cursor: pointer;
 }
@@ -1483,7 +1481,7 @@ template {
 }
 
 .faq__subtitle {
-  margin-top: 5px;
+  margin-top: 15px;
   font-weight: 300;
   font-size: 24px;
   color: #828282;
@@ -1509,7 +1507,7 @@ template {
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 22px;
   color: #2B2B2B;
   cursor: pointer;
   -webkit-transition: 0.2s all;
@@ -1527,7 +1525,7 @@ template {
   width: 16px;
   height: 11px;
   background: url(../img/faq_arrow.png) no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .faq__item__button:hover {
@@ -1571,7 +1569,7 @@ template {
 .footer__subtitle {
   margin-bottom: 25px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
   color: #FFC652;
 }
@@ -1638,109 +1636,6 @@ template {
   margin-top: 30px;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal {
-  padding: 45px 35px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 470px;
-  height: 440px;
-  border-radius: 15px;
-  background-color: #fff;
-}
-
-.modal__title {
-  font-size: 28px;
-  line-height: 31px;
-  font-weight: 700;
-  color: #212121;
-  text-align: center;
-}
-
-.modal__title span {
-  color: #72bc74;
-}
-
-.modal__close {
-  position: absolute;
-  top: 0;
-  right: -40px;
-  color: #fff;
-  font-size: 45px;
-  line-height: 21px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.modal .feed-form {
-  margin-top: 30px;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.modal .feed-form input {
-  margin-top: 10px;
-  padding-left: 50px;
-  padding-right: 20px;
-  height: 60px;
-  border: 1px solid #a2a2a2;
-  border-radius: 15px;
-  background-position: 20px 50%;
-}
-
-.modal .feed-form .button {
-  margin-top: 10px;
-  padding: 17px;
-}
-
-.modal__private {
-  margin-top: 25px;
-  font-size: 16px;
-  color: #a0a0a0;
-  text-align: center;
-}
-
-.modal_thanks {
-  padding: 25px;
-  height: 125px;
-  width: 380px;
-}
-
-.modal_thanks .modal__title {
-  font-size: 24px;
-}
-
-.modal_thanks .modal__subtitle {
-  margin-top: 10px;
-  color: #212121;
-  text-align: center;
-  font-size: 15px;
-}
-
-.overlay,
-#call,
-#order,
-#thanks {
-  display: none;
-}
-
 @media (max-width: 1800px) {
   .feedback__bg__second {
     background-size: 250px;
@@ -1794,8 +1689,8 @@ template {
     font-size: 30px;
   }
   .whyWe__descr {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .about__descr {
     bottom: -20%;
@@ -1883,16 +1778,16 @@ template {
     font-size: 20px;
   }
   .section__title {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 57px;
+    line-height: 65px;
   }
   .services__descr {
     margin-top: 30px;
     font-size: 28px;
   }
   .services__subtitle {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 21px;
   }
   .whyWe {
     padding-bottom: 130px;
@@ -1942,6 +1837,15 @@ template {
   .geo__right {
     width: 620px;
   }
+  .footer__item ul li {
+    margin-top: 5px;
+  }
+  .footer__phone, .footer__mail, .footer__adress {
+    font-size: 16px;
+  }
+  .footer__mail, .footer__adress {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -1985,6 +1889,10 @@ template {
   .promo__right {
     padding-top: 30px;
   }
+  .section__title {
+    font-size: 46px;
+    line-height: 52px;
+  }
   .services {
     padding: 100px 0;
   }
@@ -2000,6 +1908,9 @@ template {
   }
   .services__subtitle {
     font-size: 19px;
+  }
+  .whyWe {
+    padding-bottom: 100px;
   }
   .whyWe__item {
     width: 40%;
@@ -2032,6 +1943,9 @@ template {
     width: 100%;
     z-index: -1;
   }
+  .feedback__bg__second {
+    padding: 110px 0;
+  }
   .feedback__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2052,6 +1966,7 @@ template {
     max-width: 100%;
   }
   .geo__bg {
+    padding: 110px 0;
     background-position: 100% 60%;
   }
   .geo__box {
@@ -2087,6 +2002,35 @@ template {
   .geo__item:before {
     width: 30px;
     height: 30px;
+  }
+  .news {
+    padding: 120px 0;
+  }
+  .news__item {
+    padding: 45px;
+  }
+  .news__text {
+    margin-top: 40px;
+  }
+  .news__tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq {
+    padding: 110px 0;
+  }
+  .faq__items {
+    margin-top: 70px;
+  }
+  .footer__item ul li {
+    margin-top: 5px;
+  }
+  .footer__item ul a {
+    font-size: 13px;
+  }
+  .footer__phone, .footer__mail, .footer__adress {
+    font-size: 13px;
   }
 }
 
@@ -2229,26 +2173,31 @@ template {
     line-height: 16px;
   }
   .section__title {
-    font-size: 38px;
-    line-height: 45px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .services {
+    padding: 80px 0;
   }
   .services__title {
     max-width: 60%;
   }
   .services__descr {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .services__box {
     margin-top: 70px;
   }
   .services__subtitle {
     padding-left: 10px;
-    font-size: 16px;
-    line-height: 18px;
   }
   .services .btn {
-    padding: 25px 60px;
-    font-size: 20px;
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+  .whyWe {
+    padding: 90px 0 40px;
   }
   .whyWe__item {
     width: 44%;
@@ -2265,56 +2214,170 @@ template {
   }
   .whyWe__subtitle {
     margin-top: 35px;
-    font-size: 27px;
+    font-size: 22px;
   }
   .whyWe__descr {
     margin-top: 15px;
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about {
+    padding-top: 100px;
   }
   .about__left, .about__right {
     width: 100%;
     margin: 0 auto;
   }
+  .about__history__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
   .about__offer {
     margin-top: 40px;
+  }
+  .about__offer__item {
+    font-size: 18px;
+    line-height: 23px;
   }
   .about__descr {
     margin-top: 40px;
   }
+  .about__descr__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .feedback__bg__first {
+    background-size: 130px;
+  }
+  .feedback__bg__second {
+    padding: 80px 0 90px;
+  }
   .feedback__right {
     width: 90%;
+  }
+  .feedback__descr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .feedback-form {
+    border-radius: 10px;
+  }
+  .feedback-form input {
+    height: 65px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .feedback-form .btn {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+  .geo__bg {
+    padding: 90px 0;
+  }
+  .geo__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .geo__item {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .news {
+    padding: 80px 0;
+  }
+  .news__box {
+    margin-top: 90px;
   }
   .news__item__second:before {
     bottom: -45px;
     width: 90px;
     height: 75px;
   }
+  .news__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .news__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .news__tablink {
+    font-size: 16px;
+  }
+  .faq {
+    padding: 90px 0;
+  }
+  .faq__subtitle {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .faq__item__button {
+    padding-left: 50px;
+    font-size: 17px;
+  }
   .footer {
     position: relative;
+    padding: 60px 0;
   }
   .footer__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .footer__item {
-    width: 50%;
+  .footer__subtitle {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .footer__subtitle__drop {
+    padding-bottom: 3px;
+    max-width: 200px;
+    border-bottom: 1px dashed #F8B613;
+  }
+  .footer__subtitle__drop:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: block;
+    width: 9px;
+    height: 10px;
+    background: url(../img/menu_arrow.svg) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .footer__subtitle__drop.active {
+    border-bottom: none;
+  }
+  .footer__subtitle__drop.active:after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
   }
   .footer__item ul {
-    height: 0px;
-    overflow: hidden;
+    display: none;
+    padding-bottom: 10px;
+  }
+  .footer__item ul li {
+    cursor: pointer;
   }
   .footer__item.active ul {
-    height: auto;
+    display: block;
   }
   .footer__logo {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 15px;
+  }
+  .footer__icon {
+    margin-right: 5px;
+    width: 17px;
+  }
+  .footer__mail, .footer__adress {
+    margin-top: 10px;
   }
 }
 
@@ -2364,8 +2427,8 @@ template {
     width: 100%;
   }
   .section__title {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 40px;
   }
   .services__title {
     max-width: 100%;
@@ -2383,6 +2446,15 @@ template {
   }
   .whyWe__item {
     width: 100%;
+  }
+  .whyWe__icon {
+    width: 70px;
+  }
+  .whyWe__subtitle {
+    margin-top: 25px;
+  }
+  .whyWe__descr {
+    margin-top: 10px;
   }
   .about__box {
     padding-bottom: 60px;
@@ -2441,7 +2513,8 @@ template {
   .feedback-form input {
     margin-top: 30px;
     height: 60px;
-    font-size: 17px;
+    font-size: 16px;
+    border-radius: 10px;
   }
   .feedback-form .btn {
     padding: 16px 70px;
@@ -2455,8 +2528,8 @@ template {
     width: 100%;
   }
   .geo__subtitle {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .geo__district {
     margin-top: 40px;
@@ -2468,8 +2541,8 @@ template {
   .geo__item {
     margin-top: 20px;
     padding-left: 30px;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .geo__item:before {
     width: 20px;
@@ -2479,6 +2552,13 @@ template {
     margin-top: 40px;
     width: 100%;
     height: 280px;
+  }
+  .footer__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__logo {
+    width: 55px;
   }
 }
 
@@ -2543,15 +2623,16 @@ template {
     width: 70%;
   }
   .section__title {
-    font-size: 23px;
-    line-height: 29px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .services {
     padding: 60px 0;
   }
   .services__descr {
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 24px;
   }
   .services__box {
     margin-top: 40px;
@@ -2561,9 +2642,11 @@ template {
   }
   .services__item {
     width: 100%;
+    max-height: 250px;
   }
   .services__subtitle {
     font-size: 15px;
+    line-height: 16px;
   }
   .services__subtitle:after {
     width: 32px;
@@ -2573,7 +2656,10 @@ template {
     font-size: 16px;
   }
   .whyWe {
-    padding: 50px 0;
+    padding: 70px 0 40px;
+  }
+  .whyWe__items {
+    margin-top: 60px;
   }
   .whyWe__item {
     margin: 0 0 50px;
@@ -2586,10 +2672,14 @@ template {
   }
   .whyWe__subtitle {
     margin-top: 20px;
-    font-size: 19px;
+    font-size: 17px;
+    line-height: 22px;
   }
   .whyWe__descr {
     font-size: 14px;
+  }
+  .about {
+    padding-top: 70px;
   }
   .about__history {
     padding: 40px 20px 20px;
@@ -2599,8 +2689,8 @@ template {
     width: 55px;
   }
   .about__history__text {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .about__offer__title {
     font-size: 19px;
@@ -2613,8 +2703,8 @@ template {
   }
   .about__offer__item {
     padding-left: 30px;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .about__offer__item:before {
     width: 20px;
@@ -2622,11 +2712,14 @@ template {
   }
   .about__descr__text {
     padding: 20px 15px;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .feedback__bg__first {
     background-size: 100px;
+  }
+  .feedback__bg__second {
+    padding: 30px 0 70px;
   }
   .feedback__left {
     width: 100%;
@@ -2635,7 +2728,8 @@ template {
     width: 100%;
   }
   .feedback__descr {
-    font-size: 13px;
+    margin-top: 25px;
+    font-size: 14px;
     line-height: 18px;
   }
   .feedback-form {
@@ -2645,12 +2739,100 @@ template {
     margin-top: 20px;
     padding-left: 15px;
     height: 50px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .feedback-form .btn {
     margin-top: 25px;
     padding: 14px 40px;
+    font-size: 16px;
+  }
+  .geo__bg {
+    padding: 60px 0;
+  }
+  .geo__box, .geo__district, .geo__right {
+    margin-top: 30px;
+  }
+  .news {
+    padding: 60px 0;
+  }
+  .news__box {
+    margin-top: 60px;
+  }
+  .news__subtitle {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .news__item {
+    padding: 20px;
+  }
+  .news__item__first:before {
+    left: 80%;
+    -webkit-transform: none;
+            transform: none;
+    width: 50px;
+    height: 60px;
+  }
+  .news__item__second:before {
+    width: 60px;
+    height: 60px;
+  }
+  .news__text {
+    margin-top: 25px;
     font-size: 14px;
+    line-height: 18px;
+  }
+  .news__tabs {
+    margin-top: 60px;
+  }
+  .news__tablink {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .faq {
+    padding: 70px 0;
+  }
+  .faq__subtitle {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .faq__items {
+    margin-top: 40px;
+  }
+  .faq__item {
+    margin-top: 20px;
+  }
+  .faq__item__button {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .faq__item__button:after {
+    right: 10px;
+    width: 12px;
+    height: 9px;
+  }
+  .faq__item__content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .footer__logo {
+    top: -20px;
+    right: 10px;
+    width: 50px;
+  }
+  .footer__icon {
+    width: 15px;
+  }
+  .footer__phone, .footer__mail, .footer__adress {
+    font-size: 12px;
   }
 }
 

@@ -64,4 +64,10 @@ $(document).ready(function(){
 		});
 	}
 	
+	// Footer menu
+	$('.footer__subtitle__drop').on('click', function(){
+		$(this).closest('.footer__item').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+
 });
