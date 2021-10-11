@@ -429,6 +429,14 @@ body {
   color: #fff;
 }
 
+.main-page .header__menu__drop .header__menu__drop__list a {
+  color: #2A2A2A;
+}
+
+.main-page .header__menu__drop .header__menu__drop__list a:hover {
+  color: #828282;
+}
+
 .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2523,6 +2531,12 @@ body {
 }
 
 @media (max-width: 991px) {
+  .main-page .header__menu ul a {
+    color: #000;
+  }
+  .main-page .header__menu ul a:hover {
+    color: #000;
+  }
   .header__box {
     position: relative;
   }
@@ -2605,6 +2619,9 @@ body {
   }
   .header__menu ul a:hover {
     color: #000;
+  }
+  .header__menu ul a:before {
+    display: none;
   }
   .header__menu__drop {
     padding-right: 0;
