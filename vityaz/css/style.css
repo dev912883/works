@@ -1554,6 +1554,11 @@ body {
   margin-top: 30px;
 }
 
+.page__bg {
+  background: url(../img/page_bg.png) no-repeat;
+  background-size: cover;
+}
+
 .payment {
   padding: 90px 0 160px;
 }
@@ -1626,7 +1631,7 @@ body {
 }
 
 .page-head__top {
-  padding-left: 80px;
+  padding: 0 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1906,8 +1911,10 @@ body {
 }
 
 .device__img {
+  margin: auto;
   width: 100%;
   height: 200px;
+  max-width: 290px;
 }
 
 .device__img img {
@@ -1918,7 +1925,7 @@ body {
 }
 
 .device__subtitle {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -2128,7 +2135,7 @@ body {
 }
 
 .control-page .page-head__top {
-  padding-left: 50px;
+  padding: 0 50px;
   background: url(../img/control_head_bg.png) center center/cover no-repeat;
 }
 
@@ -2253,7 +2260,7 @@ body {
 }
 
 .fire-page .tools__item {
-  max-width: 435px;
+  width: 435px;
 }
 
 @media (max-width: 1800px) {
@@ -2395,6 +2402,11 @@ body {
     font-size: 28px;
     line-height: 34px;
   }
+  .objects__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .objects__left {
     padding-top: 0;
   }
@@ -2531,10 +2543,10 @@ body {
     line-height: 30px;
   }
   .page-head__descr {
-    margin-top: 90px;
+    margin-top: 60px;
   }
   .page-head__list {
-    margin-top: 90px;
+    margin-top: 60px;
   }
   .page-head__list li {
     padding-left: 55px;
@@ -2611,6 +2623,9 @@ body {
     font-size: 20px;
     line-height: 26px;
   }
+  .note {
+    padding-bottom: 140px;
+  }
   .note__icon {
     margin-right: 60px;
   }
@@ -2664,6 +2679,10 @@ body {
   .tools__img {
     width: 100px;
     height: 100px;
+  }
+  .fire-page .tools__items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -2852,7 +2871,7 @@ body {
     font-size: 13px;
   }
   .page-head__top {
-    padding-left: 40px;
+    padding: 0 40px;
   }
   .page-head__descr {
     max-width: 100%;
@@ -2920,6 +2939,18 @@ body {
   }
   .modifier__item {
     margin: 60px 25px 0;
+  }
+  .fire-page .tools__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fire-page .tools__item {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 70%;
   }
 }
 
@@ -3363,11 +3394,14 @@ body {
             align-items: center;
   }
   .variants__item {
-    margin: 40px 0 0;
+    margin: 35px 0 0;
     width: 80%;
   }
   .variants__item:first-child {
     margin-top: 0;
+  }
+  .variants__item:last-child {
+    margin-top: 35px;
   }
   .variants__subtitle {
     font-size: 24px;
@@ -3496,6 +3530,9 @@ body {
   }
   .modifier__subtitle {
     font-size: 24px;
+  }
+  .tools {
+    padding-bottom: 90px;
   }
   .tools__item {
     padding: 25px;
@@ -3711,12 +3748,15 @@ body {
     padding: 60px 0 70px;
   }
   .page-head__top {
-    padding-left: 10px;
+    padding: 0 15px;
   }
   .page-head__descr {
     margin-top: 50px;
     font-size: 17px;
     line-height: 20px;
+  }
+  .control-page .page-head__top {
+    padding: 0 15px;
   }
   .physical__price, .physical__descr {
     -webkit-box-orient: vertical;
@@ -3886,6 +3926,7 @@ body {
   .section__title {
     font-size: 25px;
     line-height: 30px;
+    text-align: center;
   }
   .services {
     padding: 60px 0;
@@ -4226,6 +4267,7 @@ body {
     width: 90%;
   }
   .device__img {
+    max-width: 200px;
     height: 90px;
   }
   .device__subtitle {
@@ -4233,11 +4275,20 @@ body {
     font-size: 15px;
     line-height: 17px;
   }
+  .control-page .device__img {
+    height: 140px;
+  }
+  .control-page .device__subtitle {
+    margin-top: 20px;
+  }
+  .objects {
+    padding-bottom: 70px;
+  }
   .objects__right {
     height: 190px;
   }
   .objects__items {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .objects__item {
     width: 100%;
@@ -4331,8 +4382,12 @@ body {
     padding-bottom: 45px;
   }
   .tools__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto 25px;
     width: 100%;
+    height: 180px;
   }
   .tools__subtitle {
     margin-top: 20px;
@@ -4340,8 +4395,13 @@ body {
     line-height: 20px;
   }
   .tools__img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+  }
+  .fire-page .tools__item {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
