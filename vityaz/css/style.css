@@ -2358,6 +2358,11 @@ body {
     font-size: 28px;
     line-height: 37px;
   }
+  .page-head__list li {
+    margin-top: 30px;
+    font-size: 28px;
+    line-height: 37px;
+  }
   .variants__item {
     max-width: 405px;
   }
@@ -2517,6 +2522,16 @@ body {
   .page-head__descr {
     margin-top: 90px;
   }
+  .page-head__list {
+    margin-top: 90px;
+  }
+  .page-head__list li {
+    padding-left: 55px;
+  }
+  .page-head__list li:before {
+    width: 32px;
+    height: 32px;
+  }
   .physical {
     padding-bottom: 140px;
   }
@@ -2584,6 +2599,12 @@ body {
   .objects__text {
     font-size: 20px;
     line-height: 26px;
+  }
+  .note__icon {
+    margin-right: 60px;
+  }
+  .note__text {
+    width: 100%;
   }
 }
 
@@ -2777,6 +2798,9 @@ body {
   .page-head__descr {
     max-width: 100%;
   }
+  .page-head__list {
+    max-width: 100%;
+  }
   .physical__subtitle {
     font-size: 24px;
   }
@@ -2817,6 +2841,12 @@ body {
     margin-top: 20px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .note {
+    padding-bottom: 140px;
+  }
+  .note__box {
+    padding: 50px 60px;
   }
 }
 
@@ -3204,6 +3234,16 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .page-head__list li {
+    margin-top: 20px;
+    padding-left: 45px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .page-head__list li:before {
+    width: 26px;
+    height: 26px;
+  }
   .physical {
     padding-bottom: 90px;
   }
@@ -3323,6 +3363,17 @@ body {
     margin-top: 15px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .note {
+    padding-bottom: 110px;
+  }
+  .note__icon {
+    margin-right: 30px;
+    width: 100px;
+  }
+  .note__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -3579,6 +3630,16 @@ body {
   }
   .objects__item {
     width: 85%;
+  }
+  .note {
+    padding-bottom: 70px;
+  }
+  .note__box {
+    padding: 40px 35px;
+  }
+  .note__text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -3893,10 +3954,23 @@ body {
   .page-head__descr {
     margin-top: 30px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 17px;
   }
   .page-head__descr p {
     margin-top: 20px;
+  }
+  .page-head__list {
+    margin-top: 50px;
+  }
+  .page-head__list li {
+    margin-top: 15px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .page-head__list li:before {
+    width: 20px;
+    height: 20px;
   }
   .physical {
     padding-bottom: 60px;
@@ -3994,6 +4068,26 @@ body {
   .objects__text {
     font-size: 14px;
     line-height: 17px;
+  }
+  .note__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+  }
+  .note__icon {
+    margin-right: 0;
+    width: 85px;
+  }
+  .note__text {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
   }
 }
 
