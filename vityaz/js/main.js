@@ -70,4 +70,15 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
+	// Modal
+	$('.modal__close').on('click', function() {
+		$('.overlay, #action, #thanks').fadeOut();
+	});
+	$('[data-modal=action]').on('click', function() {
+		$('.overlay, #action').fadeIn();
+	});
+	$('[data-modal=thanks]').on('click', function() {
+		$('.overlay, #thanks').fadeIn();
+	});
+
 });
