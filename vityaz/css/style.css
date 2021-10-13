@@ -733,6 +733,7 @@ body {
   -webkit-filter: blur(200px);
           filter: blur(200px);
   border-radius: 50%;
+  display: none;
 }
 
 .section__title {
@@ -1127,6 +1128,7 @@ body {
   -webkit-filter: blur(90px);
           filter: blur(90px);
   border-radius: 539px;
+  display: none;
 }
 
 .feedback__title {
@@ -1166,6 +1168,7 @@ body {
   -webkit-filter: blur(250px);
           filter: blur(250px);
   border-radius: 539px;
+  display: none;
 }
 
 .feedback-form {
