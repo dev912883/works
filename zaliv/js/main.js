@@ -6,7 +6,9 @@ $(document).ready(function(){
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3500
     });
 
     // Menu
