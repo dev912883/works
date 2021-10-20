@@ -830,7 +830,7 @@ body {
 }
 
 .page-box {
-  padding: 25px 0;
+  padding: 30px 0;
   background: linear-gradient(112.83deg, #e5e5e5 9.15%, rgba(227, 227, 227, 0) 68.01%, #FFFFFF 68.01%);
 }
 
@@ -849,6 +849,7 @@ body {
   position: absolute;
   z-index: 1;
   display: block;
+  display: none;
   width: 180px;
   height: 205px;
 }
@@ -893,8 +894,12 @@ body {
   margin-top: 20px;
 }
 
+.section__descr p:first-child {
+  margin-top: 0;
+}
+
 .news {
-  padding: 20px 0 60px;
+  padding: 10px 0 30px;
 }
 
 .news__title {
@@ -991,6 +996,7 @@ body {
   position: absolute;
   z-index: -1;
   display: block;
+  display: none;
   width: 180px;
   height: 205px;
 }
@@ -1180,7 +1186,6 @@ body {
 }
 
 .contacts {
-  width: 100%;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -1289,6 +1294,7 @@ body {
   padding: 30px 35px 40px;
   background: #fff;
   border: 4px solid #84AAC4;
+  border-radius: 10px;
 }
 
 .tv-guide__item {
@@ -1330,12 +1336,16 @@ body {
 }
 
 .programs__item {
-  width: 414px;
+  width: 49%;
   margin-bottom: 25px;
 }
 
 .programs__item:hover .programs__img {
   border-color: transparent;
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
 }
 
 .programs__img {
@@ -1391,7 +1401,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .program__paginate li {
@@ -1441,6 +1451,10 @@ body {
   font-size: 24px;
   line-height: 54px;
   color: #022136;
+}
+
+.channels__list li span {
+  color: #73A5C8;
 }
 
 .channels__img {
@@ -1703,6 +1717,22 @@ body {
     margin-top: 15px;
     font-size: 22px;
   }
+  .programs__subtitle {
+    font-size: 22px;
+  }
+  .contacts__abonents__item:first-child {
+    margin-right: 60px;
+  }
+  .channels__list li {
+    font-size: 20px;
+    line-height: 48px;
+  }
+  .channels__table__head__col {
+    font-size: 20px;
+  }
+  .channels__table__row__col {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -1744,6 +1774,57 @@ body {
   }
   .connection__item:first-child {
     margin-top: 0;
+  }
+  .price__table__head__col {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .price__table__row__col {
+    font-size: 14px;
+  }
+  .price__table__col {
+    padding: 20px 15px;
+  }
+  .tv-guide__item {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .tv-guide__day {
+    font-size: 22px;
+  }
+  .tv-guide__programs__item {
+    margin-top: 15px;
+    font-size: 19px;
+  }
+  .programs__subtitle {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .program__presenter {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .contacts__abonents__town {
+    font-size: 32px;
+  }
+  .contacts__abonents__hours {
+    margin-top: 15px;
+  }
+  .contacts__abonents__hours__item {
+    margin-top: 10px;
+  }
+  .contacts__phones__item {
+    margin-top: 10px;
+  }
+  .channels__subtitle {
+    font-size: 20px;
+  }
+  .channels__list li {
+    font-size: 18px;
+    line-height: 42px;
   }
 }
 
@@ -1794,7 +1875,8 @@ body {
     width: 20px;
   }
   .section__title {
-    font-size: 40px;
+    margin-bottom: 25px;
+    font-size: 35px;
   }
   .section__descr {
     font-size: 18px;
@@ -1843,6 +1925,49 @@ body {
   .connection__hours__item {
     margin-top: 10px;
     font-size: 19px;
+  }
+  .price-page .page-box__inner, .contacts-page .page-box__inner, .channels-page .page-box__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .price-page .lc, .contacts-page .lc, .channels-page .lc {
+    margin-top: 25px;
+  }
+  .price__table {
+    margin-top: 25px;
+  }
+  .tv-guide__day {
+    font-size: 20px;
+  }
+  .tv-guide__programs__item {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .programs__item {
+    width: 100%;
+  }
+  .programs__subtitle {
+    font-size: 18px;
+  }
+  .program__presenter {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .program__item {
+    height: 300px;
+  }
+  .contacts {
+    font-size: 18px;
+  }
+  .contacts__abonents__town {
+    font-size: 25px;
   }
   .footer__logo {
     width: 140px;
@@ -1998,11 +2123,12 @@ body {
     display: none;
   }
   .section__title {
+    margin-bottom: 25px;
     font-size: 35px;
   }
-  .news {
-    margin: 0 auto;
-    width: 90%;
+  .section__descr {
+    font-size: 16px;
+    line-height: 20px;
   }
   .news__box {
     -webkit-box-orient: vertical;
@@ -2065,6 +2191,76 @@ body {
   .sidebar {
     margin-right: 0;
   }
+  .connection__items {
+    margin: 25px 0;
+  }
+  .connection__item {
+    text-align: center;
+  }
+  .connection__subtitle {
+    font-size: 22px;
+  }
+  .connection__phone {
+    font-size: 16px;
+  }
+  .connection__hours__item {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .price__table__head__col {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .price__table__row__col {
+    font-size: 12px;
+  }
+  .price__table__col {
+    padding: 15px 10px;
+  }
+  .price__table__col-number {
+    display: none;
+  }
+  .program-page .lc {
+    margin-top: 40px;
+  }
+  .contacts {
+    font-size: 16px;
+  }
+  .contacts__subtitle {
+    margin-bottom: 10px;
+  }
+  .contacts__abonents__town {
+    font-size: 22px;
+  }
+  .contacts__abonents__phone {
+    margin-top: 10px;
+  }
+  .contacts__abonents__hours {
+    margin-top: 10px;
+  }
+  .contacts__phones__item {
+    margin-top: 5px;
+  }
+  .contacts__phones__tel {
+    margin-right: 30px;
+  }
+  .channels__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .channels__list {
+    margin-top: 15px;
+  }
+  .channels__list li {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .channels__table__head__col {
+    font-size: 16px;
+  }
+  .channels__table__row__col {
+    font-size: 14px;
+  }
   .footer__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2099,12 +2295,18 @@ body {
     height: 80px;
   }
   .section__title {
-    margin-bottom: 25px;
     font-size: 25px;
+    text-align: center;
+  }
+  .section__descr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section__descr p {
+    margin-top: 15px;
   }
   .news {
-    width: 100%;
-    padding: 20px 0;
+    padding: 0 0 10px;
   }
   .news__box {
     margin-top: 0;
@@ -2120,6 +2322,7 @@ body {
     margin-top: 25px;
   }
   .news__main__item {
+    margin-top: 15px;
     padding: 20px 15px;
     border: 2px solid #84AAC4;
   }
@@ -2150,6 +2353,108 @@ body {
     line-height: 18px;
   }
   .page-box__inner {
+    width: 100%;
+  }
+  .connection__items {
+    margin: 20px 0;
+  }
+  .connection__subtitle {
+    font-size: 18px;
+  }
+  .connection__phone {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .connection__hours__item {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .price-page .page-box__inner, .contacts-page .page-box__inner, .channels-page .page-box__inner {
+    width: 100%;
+  }
+  .price__table__head__col {
+    font-size: 11px;
+  }
+  .price__table__col {
+    padding: 15px 5px;
+    border: 1px solid #84AAC4;
+  }
+  .tv-guide__day {
+    margin-top: 25px;
+    font-size: 17px;
+  }
+  .tv-guide__programs__item {
+    font-size: 14px;
+  }
+  .programs__subtitle {
+    font-size: 16px;
+  }
+  .program__presenter {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .program__item {
+    height: 240px;
+  }
+  .program__paginate li {
+    width: 40px;
+    height: 43px;
+  }
+  .program__paginate a {
+    font-size: 16px;
+  }
+  .contacts {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .contacts__abonents__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__abonents__item {
+    margin-top: 10px;
+  }
+  .contacts__abonents__item:first-child {
+    margin: 0;
+  }
+  .contacts__abonents__town {
+    font-size: 18px;
+  }
+  .contacts__phones__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts__adress__map {
+    height: 260px;
+  }
+  .contacts__requisites__text p {
+    margin-top: 20px;
+  }
+  .channels__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .channels__list li {
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .channels__table__head__col {
+    font-size: 12px;
+  }
+  .channels__table__row__col {
+    font-size: 12px;
+  }
+  .channels__table__col {
+    padding: 15px;
+    border: 1px solid #84AAC4;
+  }
+  .channels__table__col-channel, .channels__table__col-mhz {
+    min-width: unset;
     width: 100%;
   }
   .footer {
