@@ -877,12 +877,16 @@ body {
 }
 
 .section__title {
+  display: table;
   margin-bottom: 35px;
   padding-top: 10px;
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
   text-transform: uppercase;
+  background: linear-gradient(92.37deg, #022136 16.9%, #004878 79.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #022136;
 }
 
@@ -903,6 +907,11 @@ body {
 
 .news {
   padding: 10px 0 30px;
+}
+
+.news .section__title {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .news__title {
