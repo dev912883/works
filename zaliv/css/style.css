@@ -849,7 +849,6 @@ body {
   position: absolute;
   z-index: 1;
   display: block;
-  display: none;
   width: 180px;
   height: 205px;
 }
@@ -992,7 +991,6 @@ body {
   position: absolute;
   z-index: -1;
   display: block;
-  display: none;
   width: 180px;
   height: 205px;
 }
