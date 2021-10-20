@@ -491,6 +491,10 @@ body {
   margin: 0 auto;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .header {
   position: relative;
   z-index: 995;
@@ -849,7 +853,6 @@ body {
   position: absolute;
   z-index: 1;
   display: block;
-  display: none;
   width: 180px;
   height: 205px;
 }
@@ -1826,6 +1829,9 @@ body {
     font-size: 18px;
     line-height: 42px;
   }
+  .adsense__item {
+    height: 230px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1938,7 +1944,15 @@ body {
     margin: 0 auto;
   }
   .price-page .lc, .contacts-page .lc, .channels-page .lc {
-    margin-top: 25px;
+    margin-top: 30px;
+  }
+  .price-page .sidebar, .contacts-page .sidebar, .channels-page .sidebar {
+    max-width: unset;
+    width: 100%;
+    margin-right: 0;
+  }
+  .price-page .adsense, .contacts-page .adsense, .channels-page .adsense {
+    margin-top: 30px;
   }
   .price__table {
     margin-top: 25px;
@@ -1968,6 +1982,9 @@ body {
   }
   .contacts__abonents__town {
     font-size: 25px;
+  }
+  .adsense__item {
+    height: 200px;
   }
   .footer__logo {
     width: 140px;
@@ -2189,6 +2206,8 @@ body {
     margin: 0 auto;
   }
   .sidebar {
+    max-width: unset;
+    width: 100%;
     margin-right: 0;
   }
   .connection__items {
@@ -2408,6 +2427,9 @@ body {
     font-size: 14px;
     line-height: 24px;
   }
+  .contacts__abonents {
+    text-align: center;
+  }
   .contacts__abonents__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2423,11 +2445,20 @@ body {
   .contacts__abonents__town {
     font-size: 18px;
   }
+  .contacts__phones {
+    text-align: center;
+  }
   .contacts__phones__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .contacts__phones__tel {
+    margin-right: 0;
+  }
+  .contacts__mail {
+    text-align: center;
   }
   .contacts__adress__map {
     height: 260px;
@@ -2439,23 +2470,30 @@ body {
     font-size: 14px;
     line-height: 20px;
   }
+  .channels__item {
+    margin-top: 30px;
+  }
   .channels__list li {
     font-size: 13px;
     line-height: 30px;
   }
   .channels__table__head__col {
+    padding: 15px;
     font-size: 12px;
   }
   .channels__table__row__col {
+    padding: 10px 15px;
     font-size: 12px;
   }
   .channels__table__col {
-    padding: 15px;
     border: 1px solid #84AAC4;
   }
   .channels__table__col-channel, .channels__table__col-mhz {
     min-width: unset;
     width: 100%;
+  }
+  .adsense__item {
+    height: 160px;
   }
   .footer {
     padding: 25px 0;
