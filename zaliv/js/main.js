@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     // Menu
     const menu = $('.header__nav'),
-    menuItem = $('.header__menu ul li'),
+    menuItem = $('.header__menu ul li').not('.header__menu__drop'),
     hamburger = $('.header__burger');
 
     hamburger.on('click', function() {
@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('body').toggleClass('overflow-hidden');
     });
 
-    menuItem.on('click', 'li:not(.header__menu__drop)', function() {
+    menuItem.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
         if ($('body').hasClass('overflow-hidden')) {

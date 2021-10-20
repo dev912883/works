@@ -1602,6 +1602,10 @@ body {
   color: #FFFFFF;
 }
 
+.footer__mail:hover {
+  color: #fff;
+}
+
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
