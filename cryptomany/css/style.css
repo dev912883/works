@@ -802,6 +802,10 @@ template {
           align-items: center;
 }
 
+.how__img {
+  margin-right: 30px;
+}
+
 .how__img img {
   max-width: 100%;
 }
@@ -936,6 +940,10 @@ template {
 
 .comment__avatar {
   margin-right: 15px;
+}
+
+.comment__avatar img {
+  max-width: 100%;
 }
 
 .comment__name {
@@ -1297,7 +1305,7 @@ template {
   }
   .advantage__item {
     padding: 35px 30px;
-    margin: 0 15px;
+    margin: 0 10px;
   }
   .advantage__icon {
     width: 85px;
@@ -1313,14 +1321,12 @@ template {
   .advantage__text {
     font-size: 14px;
   }
-  .how__img {
-    margin-right: 30px;
-  }
   .rates__item {
-    margin: 0 15px;
+    margin: 0 10px;
   }
   .comment__item {
-    margin: 0 15px;
+    margin: 0 10px;
+    padding: 35px 15px 20px;
   }
   .faq__items {
     -webkit-box-pack: center;
@@ -1350,11 +1356,34 @@ template {
     font-size: 28px;
     line-height: 33px;
   }
+  .advantage__item {
+    padding: 25px 20px;
+  }
+  .advantage__icon {
+    width: 75px;
+    height: 75px;
+  }
+  .advantage__icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  .rates__period {
+    font-size: 18px;
+  }
   .rates__percent {
-    font-size: 30px;
+    font-size: 26px;
   }
   .rates__cost li {
     font-size: 15px;
+  }
+  .comment__avatar {
+    width: 55px;
+  }
+  .comment__name {
+    font-size: 16px;
+  }
+  .comment__text {
+    font-size: 14px;
   }
   .footer__items {
     -ms-flex-wrap: wrap;
@@ -1482,7 +1511,7 @@ template {
   }
   .advantage__item {
     margin-top: 30px;
-    width: 45%;
+    width: 47%;
   }
   .how__box {
     -webkit-box-orient: vertical;
@@ -1492,9 +1521,10 @@ template {
   }
   .how__img {
     margin-top: 40px;
+    margin-right: 0;
   }
   .how__text {
-    width: 95%;
+    width: 90%;
   }
   .rates__items {
     -ms-flex-wrap: wrap;
@@ -1505,11 +1535,15 @@ template {
   }
   .rates__item {
     margin-top: 30px;
-    width: 45%;
+    width: 47%;
   }
   .comment__logo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .comment__logo a {
+    margin-top: 15px;
+    width: 140px;
   }
   .comment__logo a img {
     max-width: 100%;
@@ -1523,7 +1557,7 @@ template {
   }
   .comment__item {
     margin-top: 30px;
-    width: 45%;
+    width: 47%;
   }
   .news__items {
     -ms-flex-wrap: wrap;
@@ -1543,15 +1577,12 @@ template {
     width: 100%;
   }
   .advantage__item {
-    margin: 30px 0 0;
     width: 90%;
   }
   .rates__item {
-    margin: 30px 0 0;
     width: 90%;
   }
   .comment__item {
-    margin: 30px 0 0;
     width: 90%;
   }
   .faq__item {
@@ -1564,8 +1595,9 @@ template {
 }
 
 @media (max-width: 575px) {
-  .container {
-    padding: 0 5px;
+  .section__title {
+    font-size: 20px;
+    line-height: 25px;
   }
   .header__logo a {
     font-size: 20px;
@@ -1601,13 +1633,41 @@ template {
     margin-bottom: 10px;
   }
   .advantage__item {
+    margin: 30px 0 0;
     width: 100%;
+  }
+  .advantage__subtitle {
+    font-size: 16px;
+  }
+  .advantage__text {
+    font-size: 13px;
+  }
+  .how__text p {
+    font-size: 14px;
   }
   .rates__item {
+    margin: 30px 0 0;
     width: 100%;
   }
+  .rates__period {
+    font-size: 16px;
+  }
+  .rates__percent {
+    font-size: 22px;
+  }
+  .rates__cost li {
+    font-size: 14px;
+  }
+  .comment__logo a {
+    margin: 15px 10px 0;
+    width: 120px;
+  }
   .comment__item {
+    margin: 30px 0 0;
     width: 100%;
+  }
+  .comment__text {
+    font-size: 13px;
   }
   .faq__item {
     width: 100%;
