@@ -1,0 +1,244 @@
+@media (max-width: 1400px) {
+    .container {
+        padding: 0 15px;
+    }
+    .promo {
+        background-size: cover;
+        background-position: 50%;
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            max-width: 400px;
+            font-size: 20px;
+        }
+    }
+    .section__title {
+        font-size: 32px;
+    }
+    .services {
+        margin-top: 90px;
+        background-position: -35%;
+        &__info {
+            width: 33%;
+        }
+        &__items {
+            width: 63%;
+        }
+        &__item {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 46%;
+        }
+    }
+    .about {
+        padding-top: 90px;
+        &__box {
+            width: 60%;
+        }
+    }
+}
+@media (max-width: 1140px) {
+    .promo {
+        padding: 15px 0 360px;
+        background-position: 60%;
+        &__box {
+            margin-top: 165px;
+        }
+        &__info {
+            width: 70%;
+        }
+        &__readmore {
+            font-size: 13px;
+            &:after {
+                bottom: -2px;
+                left: -25px;
+                width: 6px;
+                height: 27px;
+            }
+            @keyframes bounce {
+                0 {
+                    left: -30px;
+                }
+                100% {
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        &__menu {
+            ul {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .logo {
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 45px;
+        }
+        &__subtitle {
+            margin-top: 40px;
+        }
+    }
+    .services {
+        margin-top: 50px;
+        background-position: -35% -15%;
+        &__box {
+            flex-direction: column;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__descr {
+            margin-top: 30px;
+            width: 50%;
+        }
+        &__items {
+            width: 100%;
+        }
+        &__item {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .btn {
+            display: none;
+        }
+    }
+    .about {
+        background-position: 125% -100px;
+        &__box {
+            width: 90%;
+        }
+        &__text {
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        &__menu {
+            ul {
+                li {
+                    margin-right: 25px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .logo {
+        &__img {
+            width: 65px;
+        }
+        &__text {
+            display: none;
+        }
+    }
+    .promo {
+        &__info {
+            width: 80%;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+    }
+    .section__title {
+        font-size: 26px;
+    }
+    .services {
+        &__descr {
+            width: 80%;
+            font-size: 15px;
+        }
+        &__items {
+            margin-top: 60px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .about {
+        background-position: 145% -110px;
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        &__menu {
+            ul {
+                li {
+                    margin-right: 15px;
+                }
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .promo {
+        &__box {
+            margin-top: 120px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+    .section__title {
+        font-size: 22px;
+    }
+    .services {
+        &__descr {
+            width: 100%;
+        }
+        &__items {
+            width: 100%;
+        }
+        &__item {
+            margin-bottom: 60px;
+            width: 100%;
+        }
+    }
+    .about {
+        padding-top: 70px;
+        background: none;
+        &__box {
+            width: 100%;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .promo {
+        &__info {
+            width: 100%;
+        }
+    }
+}
