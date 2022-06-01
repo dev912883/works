@@ -872,6 +872,18 @@ body {
   .about__box {
     width: 60%;
   }
+  .progress {
+    margin-top: 160px;
+  }
+  .progress__item {
+    margin: 0 10px;
+  }
+  .contacts {
+    margin-top: 160px;
+  }
+  .contacts__box {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -909,6 +921,17 @@ body {
     100% {
       left: -20px;
     }
+  }
+  .progress__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .progress__item {
+    margin-bottom: 25px;
+    width: 45%;
+  }
+  .contacts__box {
+    width: 100%;
   }
 }
 
@@ -961,6 +984,9 @@ body {
   .about__text {
     margin-top: 40px;
   }
+  .contacts__form {
+    width: 400px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -971,7 +997,7 @@ body {
     font-size: 16px;
   }
   .logo__img {
-    width: 65px;
+    width: 75px;
   }
   .logo__text {
     display: none;
@@ -1008,17 +1034,59 @@ body {
   .about__text {
     font-size: 15px;
   }
+  .progress {
+    margin-top: 140px;
+  }
+  .progress__items {
+    margin-top: 40px;
+  }
+  .progress__item {
+    margin: 0 0 25px;
+  }
+  .progress__number {
+    font-size: 60px;
+  }
+  .progress__text {
+    font-size: 14px;
+  }
+  .contacts {
+    margin-top: 140px;
+  }
+  .contacts__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__links {
+    margin-top: 30px;
+  }
+  .contacts__links a {
+    margin-top: 20px;
+  }
+  .contacts__form {
+    margin: 40px auto 0;
+  }
 }
 
 @media (max-width: 575px) {
   .container {
     padding: 0 10px;
   }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__menu {
+    margin-top: 25px;
+  }
   .header__menu ul li {
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .header__menu ul a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .promo__box {
     margin-top: 120px;
@@ -1052,14 +1120,51 @@ body {
   .about__text {
     font-size: 14px;
   }
+  .progress {
+    margin-top: 110px;
+  }
+  .progress__item {
+    width: 100%;
+  }
+  .progress__number {
+    font-size: 50px;
+  }
+  .contacts {
+    margin-top: 90px;
+  }
+  .contacts__links a {
+    font-size: 16px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .footer__menu {
+    margin-top: 30px;
+  }
+  .footer__menu li {
+    margin-right: 25px;
+  }
+  .footer__menu a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 420px) {
   .promo__info {
     width: 100%;
   }
-}
-
-.progress, .contacts, .footer {
-  display: none;
+  .contacts__form {
+    padding: 45px 25px;
+    width: 100%;
+  }
+  .contacts__form input {
+    margin-bottom: 15px;
+  }
+  .contacts__form .btn {
+    margin: 30px auto 0;
+  }
 }
