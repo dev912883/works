@@ -1157,6 +1157,11 @@ body {
   .promo__info {
     width: 100%;
   }
+  .services__subtitle span {
+    left: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
   .contacts__form {
     padding: 45px 25px;
     width: 100%;
