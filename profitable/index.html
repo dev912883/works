@@ -161,8 +161,8 @@
                     </div>
                     <div class="contacts__right">
                         <form action="#" class="contacts__form">
-                            <input name="name" placeholder="Ваше имя" required="">
-                            <input name="phone" placeholder="Номер телефона" required="">
+                            <input name="name" type="text" placeholder="Ваше имя" required>
+                            <input name="phone" type="text" placeholder="Номер телефона" required>
                             <textarea name="message" placeholder="Сообщение"></textarea>
                             <button class="btn">Связаться</button>
                         </form>
@@ -215,8 +215,15 @@
         </div>
     </section>
 
+    <div class="overlay">
+		<div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Ваша заявка <span>отправлена!</span> </div>
+            <div class="modal__subtitle">Мы перезвоним в ближайшее время</div>
+        </div>
+	</div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
