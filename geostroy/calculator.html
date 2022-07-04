@@ -88,7 +88,7 @@
         <section class="calc">
             <div class="container">
                 <div class="calc__box">
-                    <div class="calc__title">Рассчитать стоимость скважины</div>
+                    <div class="page__title">Рассчитать стоимость скважины</div>
                     <form action="#">
                         <div class="calc__district">
                             <div class="calc__subtitle">1. Выберите район</div>
@@ -308,13 +308,15 @@
                                 <label for="no">Нет</label>
                             </div>
                         </div>
-                        <div class="calc__result">
-                            <div class="calc__result__price">Итоговая стоимость скважины: 55 000р.</div>
-                            <div class="calc__result__descr">*Приблизительный расчет. Окончательную стоимость уточняйте по телефону.</div>
-                            <div class="calc__result__form feedform">
-                                <input name="name" type="text" placeholder="Ваше имя" required>
-                                <input name="phone" type="text" placeholder="Номер телефона" required>
-                                <button class="btn">Связаться</button>
+                        <div class="action">
+                            <div class="action__box">
+                                <div class="action__title">Итоговая стоимость скважины: 55 000р.</div>
+                                <div class="action__descr">*Приблизительный расчет. Окончательную стоимость уточняйте по телефону.</div>
+                                <div class="feedform">
+                                    <input class="feedform__name" name="name" type="text" placeholder="Ваше имя" required>
+                                    <input class="feedform__phone" name="phone" type="text" placeholder="Номер телефона" required>
+                                    <button class="btn">Связаться</button>
+                                </div>
                             </div>
                         </div>
                     </form>
