@@ -15,6 +15,22 @@ $(document).ready(function(){
         // autoplay: true,
         // autoplaySpeed: 4000,
     });
+    // Reviews
+    $(".reviews__text").each(function(i) {
+        if ($(this).text().length > 350) {
+           $(this).addClass("reviews__text_more");
+        }
+    });
+    $('.reviews__readmore').on('click', function() {
+        if ($(this).text() == 'Читать полностью') {
+            $(this).closest('div.reviews__item').find('div.reviews__text_more').addClass('active');
+            $(this).text('Скрыть');
+        }
+        else {
+            $(this).closest('div.reviews__item').find('div.reviews__text_more').removeClass('active');
+            $(this).text('Читать полностью');
+        }
+    });
     // Send form
     $('form').submit(function(e) {
         e.preventDefault();
