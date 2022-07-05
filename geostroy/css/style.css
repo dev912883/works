@@ -1974,7 +1974,17 @@ template {
 }
 
 .contacts {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  position: relative;
+}
+
+.contacts__title .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .contacts__map {
@@ -1987,6 +1997,7 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px;
 }
 
 .contacts__box {
@@ -2058,7 +2069,7 @@ template {
 }
 
 .calc__subtitle {
-  margin: 60px 0 40px 0;
+  margin-top: 60px;
   padding: 25px;
   background: #0796DC;
   font-weight: 500;
@@ -2117,7 +2128,7 @@ template {
 
 .calc__input__img {
   margin-bottom: 12px;
-  width: 200px;
+  width: 170px;
   height: 140px;
 }
 
@@ -2128,10 +2139,14 @@ template {
      object-fit: contain;
 }
 
-.calc__district__box {
+.calc__district__box, .calc__pipe__box, .calc__arrangement__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
+}
+
+.calc__district__box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2151,20 +2166,24 @@ template {
 }
 
 .calc__pipe__box, .calc__arrangement__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+.calc__pipe__input, .calc__arrangement__input {
+  width: 23.46%;
+}
+
 .calc__pipe__input input + span, .calc__arrangement__input input + span {
   padding: 30px 40px;
-  width: 305px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: 2px solid transparent;
+}
+
+.calc__water__box {
+  margin-top: 40px;
 }
 
 .calc__checkbox {
@@ -2348,6 +2367,18 @@ template {
   .contacts .feedform {
     width: 410px;
   }
+  .calc__pipe__box, .calc__arrangement__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 14px;
+  }
+  .calc__pipe__input, .calc__arrangement__input {
+    margin: 30px 15px 0;
+    width: 40%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2490,11 +2521,17 @@ template {
   .footer .btn {
     width: 320px;
   }
+  .discount__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .discount__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    width: 85%;
   }
   .discount__left {
     width: 100%;
@@ -2528,6 +2565,9 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+  .feedform input, .feedform textarea {
+    font-size: 14px;
   }
   .header {
     position: relative;
@@ -2701,9 +2741,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
   }
-  .action .feedform input {
-    font-size: 14px;
-  }
   .action .feedform__name {
     margin-bottom: 10px;
     margin-right: 0;
@@ -2784,17 +2821,44 @@ template {
     position: static;
     margin-left: 15px;
   }
+  .discount__item {
+    width: 100%;
+  }
+  .contacts__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__title .btn {
+    height: 48px;
+    font-size: 14px;
+  }
+  .contacts__map {
+    margin-top: 50px;
+  }
   .contacts__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 50px;
   }
   .contacts__left {
     margin-right: 0;
   }
   .contacts .feedform {
     margin-top: 50px;
+  }
+  .calc__subtitle {
+    margin-top: 45px;
+    font-size: 16px;
+  }
+  .calc__pipe__input, .calc__arrangement__input {
+    width: 58%;
+  }
+  .calc .action__box {
+    padding: 60px 10px;
+    background-position: 98% 98%;
   }
 }
 
@@ -3121,10 +3185,10 @@ template {
     height: 290px;
   }
   .discount__item {
-    margin-top: 25px;
+    margin-top: 30px;
   }
   .discount__left {
-    padding: 25px;
+    padding: 20px;
   }
   .discount__title {
     font-size: 18px;
@@ -3134,11 +3198,11 @@ template {
   }
   .discount__text {
     margin-top: 10px;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 13px;
+    line-height: 24px;
   }
   .discount .btn {
-    margin: 15px auto 0;
+    margin: 20px auto 0;
     font-size: 13px;
   }
   .discount__right {
@@ -3146,6 +3210,19 @@ template {
   }
   .discount__right img {
     border-radius: 0;
+  }
+  .contacts__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__title .btn {
+    position: static;
+    margin-top: 35px;
   }
   .contacts__item:not(:first-child) {
     margin-top: 25px;
@@ -3159,8 +3236,48 @@ template {
   .contacts__text span {
     font-size: 15px;
   }
-  .contacts .feedform input {
-    font-size: 13px;
+  .calc__subtitle {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .calc__input__img {
+    width: 140px;
+    height: 120px;
+  }
+  .calc__district__box {
+    margin-top: 26px;
+  }
+  .calc__district__input input + span {
+    width: 300px;
+  }
+  .calc__pipe__box, .calc__arrangement__box {
+    margin-top: 0;
+  }
+  .calc__pipe__input, .calc__arrangement__input {
+    margin: 30px 0 0;
+    width: 300px;
+  }
+  .calc__pipe__input input + span, .calc__arrangement__input input + span {
+    padding: 25px;
+  }
+  .calc__water__box {
+    margin-top: 30px;
+  }
+  .calc__checkbox + label {
+    font-size: 18px;
+  }
+  .calc__checkbox + label:before {
+    width: 35px;
+    height: 35px;
+  }
+  .calc .action {
+    margin-top: 40px;
+  }
+  .calc .action__box {
+    padding-bottom: 80px;
+  }
+  .calc .action .feedform input, .calc .action .feedform .btn {
+    width: 90%;
   }
 }
 
@@ -3189,5 +3306,8 @@ template {
   }
   .header__phone a:last-child {
     margin: 5px 0 0;
+  }
+  .calc .action .feedform input, .calc .action .feedform .btn {
+    width: 100%;
   }
 }
