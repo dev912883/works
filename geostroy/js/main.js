@@ -12,8 +12,22 @@ $(document).ready(function(){
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 4000,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                variableWidth: false,
+                  slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                variableWidth: false,
+                  slidesToShow: 1,
+              }
+            }
+        ]
     });
     // Reviews
     $(".reviews__text").each(function(i) {
@@ -32,64 +46,64 @@ $(document).ready(function(){
         }
     });
     // Send form
-    $('form').submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "mailer/smart.php",
-            data: $(this).serialize()
-        }).done(function() {
-            $(this).find("input").val("");
-            $('#call').fadeOut();
-            $('.overlay, #thanks').fadeIn();
-            $('form').trigger('reset');
-        });
-        return false;
-    });
+    // $('form').submit(function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "mailer/smart.php",
+    //         data: $(this).serialize()
+    //     }).done(function() {
+    //         $(this).find("input").val("");
+    //         $('#call').fadeOut();
+    //         $('.overlay, #thanks').fadeIn();
+    //         $('form').trigger('reset');
+    //     });
+    //     return false;
+    // });
 
     // Menu
-    const menu = $('.header__info'),
+    const menu = $('.header__bottom'),
     menuItem = $('.header__menu ul li a'),
     hamburger = $('.header__burger');
 
     hamburger.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
-        $('body').toggleClass('overflow-hidden');
+        // $('body').toggleClass('overflow-hidden');
     });
 
     menuItem.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
-        if ($('body').hasClass('overflow-hidden')) {
-          $('body').toggleClass('overflow-hidden');
-        }
-        else {
-          return;
-        }
+        // if ($('body').hasClass('overflow-hidden')) {
+        //   $('body').toggleClass('overflow-hidden');
+        // }
+        // else {
+        //   return;
+        // }
     });
 
 	// Modal
-	$('.modal__close').on('click', function() {
-		$('.overlay, #thanks, #call').fadeOut();
-	});
-	$('.phone_fixed').on('click', function() {
-		$('.overlay, #call').fadeIn();
-	});
+	// $('.modal__close').on('click', function() {
+	// 	$('.overlay, #thanks, #call').fadeOut();
+	// });
+	// $('.phone_fixed').on('click', function() {
+	// 	$('.overlay, #call').fadeIn();
+	// });
 
     // Smooth scroll and page up
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
-            $('.pageup').fadeIn();
-        } else {
-            $('.pageup').fadeOut();
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > 1600) {
+    //         $('.pageup').fadeIn();
+    //     } else {
+    //         $('.pageup').fadeOut();
+    //     }
+    // });
 
-    $("a[href^='#']").click(function(){
-        const _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-        return false;
-    });
+    // $("a[href^='#']").click(function(){
+    //     const _href = $(this).attr("href");
+    //     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    //     return false;
+    // });
 
 });
