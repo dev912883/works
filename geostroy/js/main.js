@@ -63,24 +63,24 @@ $(document).ready(function(){
 
     // Menu
     const menu = $('.header__bottom'),
-    menuItem = $('.header__menu ul li a'),
+    menuItem = $('.header__menu li a').not('[href="#submenu"]'),
     hamburger = $('.header__burger');
 
     hamburger.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
-        // $('body').toggleClass('overflow-hidden');
+        $('body').toggleClass('hide');
     });
 
     menuItem.on('click', function() {
         hamburger.toggleClass('active');
         menu.toggleClass('active');
-        // if ($('body').hasClass('overflow-hidden')) {
-        //   $('body').toggleClass('overflow-hidden');
-        // }
-        // else {
-        //   return;
-        // }
+        if ($('body').hasClass('hide')) {
+          $('body').toggleClass('hide');
+        }
+        else {
+          return;
+        }
     });
 
 	// Modal
