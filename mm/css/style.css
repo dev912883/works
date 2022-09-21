@@ -2191,6 +2191,9 @@ body {
   .section__offset {
     margin-top: 90px;
   }
+  .btn {
+    font-size: 18px;
+  }
   .header {
     position: relative;
   }
@@ -2373,6 +2376,12 @@ body {
   .biography__descr {
     width: 400px;
   }
+  .biography__post {
+    font-size: 22px;
+  }
+  .biography__content {
+    margin-top: 20px;
+  }
   .reviews__descr {
     width: 90%;
   }
@@ -2409,7 +2418,7 @@ body {
             flex-direction: column;
   }
   .footer__form form .btn {
-    margin: 15px 0 0;
+    margin: 20px 0 0;
     width: 215px;
   }
 }
@@ -2492,14 +2501,11 @@ body {
     margin-top: 20px;
     width: 100%;
   }
-  .reviews__items {
-    margin-top: 35px;
+  .reviews__items, .reviews .slick-dots {
+    margin-top: 30px;
   }
   .reviews__item {
     width: 100%;
-  }
-  .reviews .slick-dots {
-    margin-top: 35px;
   }
   .footer__top {
     -webkit-box-orient: vertical;
@@ -2547,7 +2553,7 @@ body {
 }
 @media (max-width: 575px) {
   .section__offset {
-    margin-top: 60px;
+    margin-top: 70px;
   }
   .section__label {
     font-size: 14px;
@@ -2555,6 +2561,14 @@ body {
   .section__title {
     font-size: 26px;
     line-height: 34px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .btn:before {
+    width: 30px;
+    height: 30px;
+    background-size: 14px;
   }
   .header__box {
     padding: 20px 10px;
@@ -2589,16 +2603,17 @@ body {
     padding: 20px 15px 20px 55px;
     font-size: 14px;
   }
-  .promo__info .btn:before {
-    width: 30px;
-    height: 30px;
-    background-size: 14px;
-  }
   .promo__descr {
     width: 100%;
   }
   .exp {
-    margin-top: 60px;
+    margin-top: 70px;
+  }
+  .exp__info .btn:before {
+    background-size: 14px;
+  }
+  .exp__items {
+    margin-top: 15px;
   }
   .exp__item {
     margin-top: 20px;
@@ -2616,6 +2631,9 @@ body {
   .exp__text {
     font-size: 14px;
   }
+  .action {
+    padding: 50px 0;
+  }
   .action__box__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2626,12 +2644,19 @@ body {
   .action__services {
     width: auto;
   }
+  .action__services li {
+    font-size: 22px;
+  }
+  .action__questions li {
+    font-size: 14px;
+  }
   .action .btn {
     -ms-flex-item-align: auto;
         align-self: auto;
-    margin: 180px 0 0;
+    margin: 170px 0 0;
   }
   .action .btn:after {
+    bottom: 70px;
     width: 58px;
     height: 100px;
   }
@@ -2676,5 +2701,49 @@ body {
     padding: 0 20px 20px;
     font-size: 14px;
     line-height: 22px;
+  }
+  .reviews__descr {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .reviews__item {
+    padding: 35px 25px;
+  }
+  .reviews__subtitle {
+    font-size: 18px;
+  }
+  .reviews__star {
+    width: 16px;
+    height: 16px;
+  }
+  .reviews__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .reviews__avatar {
+    margin-right: 15px;
+    width: 45px;
+  }
+  .reviews__avatar img {
+    width: 100%;
+  }
+  .reviews__name {
+    font-size: 14px;
+  }
+  .reviews__post {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .reviews .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+  .footer__social__items a svg {
+    width: 28px;
+    height: 28px;
+  }
+  .footer__whatsapp svg {
+    width: 28px;
+    height: 28px;
   }
 }
