@@ -1279,11 +1279,11 @@ body {
 }
 
 .services {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .services__info {
   padding-top: 110px;
-  width: 400px;
+  width: 31%;
 }
 .services__info .btn {
   margin-top: 30px;
@@ -1318,9 +1318,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  margin-top: 50px;
+  margin-top: 45px;
   padding: 45px 35px 64px;
-  width: 400px;
+  width: 31%;
   height: 490px;
 }
 .services__item:hover .services__img:after {
@@ -1414,7 +1414,6 @@ body {
 .price__item {
   padding: 65px 80px;
   width: 420px;
-  height: 565px;
   background: #fff;
   border-bottom: 10px solid #C1237F;
 }
@@ -1429,7 +1428,6 @@ body {
 .price__item_center {
   padding: 80px;
   width: 460px;
-  height: 625px;
   background: #000;
   border-bottom: none;
 }
@@ -2098,6 +2096,10 @@ body {
   background-image: url(../img/arrow_black.svg);
 }
 
+.meet {
+  display: none;
+}
+
 @media (max-width: 1500px) {
   .promo__left img {
     height: 100%;
@@ -2197,6 +2199,22 @@ body {
   }
   .reviews__subtitle {
     font-size: 26px;
+  }
+  .services__item {
+    margin-top: 35px;
+  }
+  .services__subtitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .price__item {
+    padding: 45px 60px;
+  }
+  .price__item_center {
+    padding: 65px;
+  }
+  .price__value {
+    font-size: 42px;
   }
 }
 @media (max-width: 1080px) {
@@ -2445,6 +2463,28 @@ body {
     margin: 20px 0 0;
     width: 215px;
   }
+  .services__info {
+    width: 47%;
+  }
+  .services__item {
+    margin-top: 45px;
+    width: 47%;
+  }
+  .price__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .price__item {
+    margin-top: 30px;
+    padding: 65px 80px;
+    width: 450px;
+  }
+  .price__item_center {
+    padding: 80px;
+  }
 }
 @media (max-width: 850px) {
   .biography__line {
@@ -2456,6 +2496,13 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .section__title_average {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .header_fixed .header__logo {
+    width: 210px;
+  }
   .promo__right {
     width: 535px;
   }
@@ -2574,6 +2621,18 @@ body {
     bottom: 0;
     left: 0;
   }
+  .services__item {
+    margin-top: 40px;
+    padding: 35px 25px 54px;
+    height: 400px;
+  }
+  .price {
+    padding: 80px 0;
+  }
+  .price .btn {
+    width: auto;
+    font-size: 16px;
+  }
 }
 @media (max-width: 575px) {
   .section__offset {
@@ -2586,22 +2645,25 @@ body {
     font-size: 26px;
     line-height: 34px;
   }
-  .btn {
-    font-size: 14px;
-  }
-  .btn:before {
-    width: 30px;
-    height: 30px;
-    background-size: 14px;
+  .section__title_average {
+    font-size: 28px;
+    line-height: 36px;
   }
   .header__box {
     padding: 20px 10px;
+    border-bottom: 2px solid #C1237F;
   }
   .header__logo {
     width: 160px;
   }
   .header__group {
-    top: 67px;
+    top: 66px;
+  }
+  .header_fixed .header__logo {
+    width: 160px;
+  }
+  .header_fixed .header__box {
+    padding: 20px 15px;
   }
   .promo__box {
     -webkit-box-orient: vertical;
@@ -2627,13 +2689,23 @@ body {
     padding: 20px 15px 20px 55px;
     font-size: 14px;
   }
+  .promo__info .btn:before {
+    width: 30px;
+    height: 30px;
+    background-size: 14px;
+  }
   .promo__descr {
     width: 100%;
   }
   .exp {
     margin-top: 70px;
   }
+  .exp__info .btn {
+    font-size: 14px;
+  }
   .exp__info .btn:before {
+    width: 30px;
+    height: 30px;
     background-size: 14px;
   }
   .exp__items {
@@ -2769,5 +2841,48 @@ body {
   .footer__whatsapp svg {
     width: 28px;
     height: 28px;
+  }
+  .services__info {
+    margin-bottom: 10px;
+    padding-top: 0;
+    width: 100%;
+  }
+  .services__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services__item {
+    margin-top: 30px;
+    width: 90%;
+    height: 490px;
+  }
+  .services__subtitle {
+    font-size: 24px;
+  }
+  .price {
+    padding: 70px 0;
+  }
+  .price__items {
+    margin-top: 10px;
+  }
+  .price__item {
+    width: 420px;
+  }
+  .price__value {
+    font-size: 34px;
+  }
+  .price .btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .services__item {
+    width: 100%;
+    height: 400px;
+  }
+  .price__item {
+    padding: 40px;
+    width: 100%;
   }
 }
