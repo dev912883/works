@@ -622,6 +622,30 @@ body {
 .header__burger {
   display: none;
 }
+.header_fixed {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.header_fixed .header__logo {
+  width: 250px;
+}
+.header_fixed .header__box {
+  padding: 15px;
+  border-bottom: 2px solid #f9f9f9;
+}
+.header_fixed .header__menu li a {
+  font-size: 14px;
+  line-height: 36px;
+}
+.header_fixed .header__social a svg {
+  width: 25px;
+  height: 25px;
+}
 
 .promo__box {
   display: -webkit-box;

@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    // Fixed header
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 400) {
+            $('.header').addClass('header_fixed');
+        } else {
+            $('.header').removeClass('header_fixed');
+        } 
+    });
     // Menu
     const menu = $('.header__group'),
         menuItem = $('.header__menu ul li a'),
