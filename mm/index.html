@@ -61,7 +61,7 @@
                         <h1 class="promo__title"><span class="text-pink">Маргарита</span> <br> Ма́ртын</h1>
                         <div class="promo__descr">Магистр психологии, коуч ECA</div>
                         <div class="promo__descr">Очные и онлайн-консультации в гештальт-подходе на русском и немецком языках</div>
-                        <button class="btn btn_white">Назначить встречу-знакомство</button>
+                        <button class="btn btn_white" data-modal="call">Назначить встречу-знакомство</button>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                             <li>Что лучше - <span class="text-pink">онлайн или лично?</span></li>
                             <li><span class="text-pink">Как выбрать</span> себе психолога?</li>
                         </ul>
-                        <button class="btn btn_mini">Задать вопрос</button>
+                        <button class="btn btn_mini" data-modal="question">Задать вопрос</button>
                     </div>
                 </div>
             </div>
@@ -373,6 +373,36 @@
             </div>
         </div>
     </footer>
+    <div class="overlay">
+        <div class="modal" id="call">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Назначить <span class="text-pink"><br>встречу-знакомство</span> </div>
+            <form action="#" class="feedform">
+                <div class="feedform__group">
+                    <input name="name" type="text" placeholder="Ваше имя" required>
+                    <input name="phone" type="text" placeholder="Номер телефона" required>
+                </div>
+                <button class="btn btn_mini">Отправить</button>
+            </form>
+        </div>
+        <div class="modal" id="question">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Задайте ваш <span class="text-pink">вопрос</span></div>
+            <form action="#" class="feedform">
+                <div class="feedform__group">
+                    <input name="name" type="text" placeholder="Ваше имя" required>
+                    <input name="phone" type="text" placeholder="Номер телефона" required>
+                </div>
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <button class="btn btn_mini">Отправить</button>
+            </form>
+        </div>
+		<div class="modal modal_thanks" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Ваше сообщение <span class="text-pink">отправлено!</span></div>
+            <div class="modal__subtitle">Я свяжусь с Вами в ближайшее время</div>
+        </div>
+	</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

@@ -2058,12 +2058,13 @@ body {
   -webkit-transform: scale(-1, -1) rotate(-20deg);
           transform: scale(-1, -1) rotate(-20deg);
 }
-.contacts .feedform__group {
+
+.feedform__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.contacts .feedform input {
+.feedform input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2074,10 +2075,10 @@ body {
   border-radius: 15px;
   font-size: 14px;
 }
-.contacts .feedform input:first-child {
+.feedform input:first-child {
   margin-right: 20px;
 }
-.contacts .feedform textarea {
+.feedform textarea {
   margin-top: 20px;
   padding: 20px;
   width: 100%;
@@ -2087,18 +2088,138 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.55);
   border-radius: 15px;
 }
-.contacts .feedform .btn {
+.feedform .btn {
   margin-top: 25px;
   background-color: #000;
   color: #fff;
 }
-.contacts .feedform .btn:hover {
+.feedform .btn:hover {
   color: #000;
   -webkit-box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
 }
-.contacts .feedform .btn:hover:before {
+.feedform .btn:hover:before {
   background-image: url(../img/arrow_black.svg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 60px;
+  width: 410px;
+  background-color: #fff;
+}
+.modal__title {
+  font-size: 34px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-size: 45px;
+  line-height: 21px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.modal__close:hover {
+  color: #C1237F;
+}
+.modal .feedform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+.modal .feedform__group {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.modal .feedform input {
+  width: 100%;
+}
+.modal .feedform input:not(:first-child) {
+  margin-top: 15px;
+}
+.modal .feedform input:first-child {
+  margin-right: 0;
+}
+.modal .feedform .btn {
+  font-size: 14px;
+}
+.modal .feedform:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -35px;
+  left: unset;
+  right: -60px;
+  width: 80px;
+  height: 50px;
+  background: url(../img/smooth-arrow.png) no-repeat;
+  background-size: 100%;
+  -webkit-transform: scale(-1, -1) rotate(67deg);
+          transform: scale(-1, -1) rotate(67deg);
+}
+.modal_thanks {
+  position: relative;
+  padding: 40px 60px;
+}
+.modal_thanks:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/check.svg) 50% 50% no-repeat;
+  background-size: 19px;
+  border-radius: 50%;
+  border: 2px solid #C1237F;
+}
+.modal_thanks .modal__title {
+  font-weight: 700;
+}
+.modal_thanks .modal__subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+.overlay,
+#call,
+#question,
+#thanks {
+  display: none;
 }
 
 @media (max-width: 1500px) {
@@ -3377,6 +3498,33 @@ body {
   }
   .contacts .feedform .btn {
     font-size: 14px;
+  }
+  .feedform input {
+    padding: 15px;
+  }
+  .feedform textarea {
+    padding: 15px;
+  }
+  .modal {
+    padding: 50px 30px;
+    width: 300px;
+  }
+  .modal__close {
+    top: unset;
+    bottom: -45px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .modal__title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .modal .feedform {
+    margin-top: 30px;
+  }
+  .modal .feedform:before {
+    display: none;
   }
 }
 @media (max-width: 450px) {

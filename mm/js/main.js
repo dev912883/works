@@ -37,7 +37,7 @@ $(document).ready(function(){
         arrows: false,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -48,10 +48,16 @@ $(document).ready(function(){
             }
         ]
     });
-    // Modal
-    // $('.modal__close').on('click', function() {
-    //     $('.overlay, #thanks').fadeOut();
-    // });
+	// Modal
+	$('[data-modal=call]').on('click', function() {
+        $('.overlay, #call').fadeIn();
+    });
+	$('[data-modal=question]').on('click', function() {
+        $('.overlay, #question').fadeIn();
+    });
+	$('.modal__close').on('click', function() {
+		$('.overlay, #thanks, #call, #question').fadeOut();
+	});
 
     // Send form
     // $('form').submit(function(e) {
@@ -70,17 +76,17 @@ $(document).ready(function(){
     // });
 
     // Smooth scroll and page up
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
-            $('.pageup').fadeIn();
-        } else {
-            $('.pageup').fadeOut();
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > 1600) {
+    //         $('.pageup').fadeIn();
+    //     } else {
+    //         $('.pageup').fadeOut();
+    //     }
+    // });
 
-    $("a[href^='#']").click(function(){
-        const _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-        return false;
-    });
+    // $("a[href^='#']").click(function(){
+    //     const _href = $(this).attr("href");
+    //     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    //     return false;
+    // });
 });
