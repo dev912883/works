@@ -239,6 +239,7 @@ textarea {
 button,
 input {
   overflow: visible;
+  outline: none;
 }
 
 button,
@@ -286,6 +287,7 @@ input[type=radio] {
 textarea {
   overflow: auto;
   resize: vertical;
+  outline: none;
 }
 
 fieldset {
@@ -490,8 +492,8 @@ body {
   display: inline-block;
   position: relative;
   padding: 20px 25px 20px 60px;
-  background: #FFFFFF;
-  border: 1px solid #000000;
+  background: #fff;
+  border: 1px solid #000;
   border-radius: 50px;
   font-size: 21px;
   line-height: 100%;
@@ -517,18 +519,18 @@ body {
   transition: 0.3s all;
 }
 .btn_mini {
-  padding: 17px 60px 17px 25px;
+  padding: 17px 52px 17px 25px;
   font-size: 16px;
 }
 .btn_mini:before {
   left: unset;
   right: 25px;
-  width: 21px;
-  height: 15px;
-  background-color: transparent;
+  width: 16px;
+  height: 12px;
+  background-color: transparent !important;
 }
-.btn_mini:hover:before {
-  right: 22px;
+.btn_white {
+  color: #000;
 }
 .btn_white:hover {
   color: #fff;
@@ -538,6 +540,18 @@ body {
 .btn_white:hover:before {
   background-color: #fff;
   background-image: url(../img/arrow_black.svg);
+}
+.btn_black {
+  color: #fff;
+}
+.btn_black:hover {
+  color: #000;
+  -webkit-box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.btn_black:hover:before {
+  background-color: #000;
+  background-image: url(../img/arrow_white.svg);
 }
 
 .header__box {
@@ -626,6 +640,7 @@ body {
   position: fixed !important;
   top: 0;
   width: 100%;
+  max-width: 1920px;
   background: #fff;
   z-index: 999;
   -webkit-transition: 0.3s all;
@@ -827,7 +842,7 @@ body {
 }
 .action__services {
   margin-right: 130px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .action__services li {
   margin-top: 15px;
@@ -840,7 +855,7 @@ body {
 }
 .action__questions {
   margin-right: 130px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .action__questions li {
   position: relative;
@@ -848,7 +863,19 @@ body {
   padding-left: 22px;
   font-size: 16px;
   line-height: 100%;
-  color: #FFFFFF;
+}
+.action__questions li a {
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.action__questions li a:hover {
+  color: #C1237F;
+}
+.action__questions li a:hover .text-pink {
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .action__questions li:before {
   content: "";
@@ -868,6 +895,9 @@ body {
   background: #C1237F;
   border: none;
   color: #fff;
+}
+.action .btn:hover:before {
+  right: 22px;
 }
 .action .btn:after {
   content: "";
@@ -959,7 +989,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #fff;
 }
 .biography__line {
   margin: 0 45px;
@@ -1151,7 +1181,7 @@ body {
 .footer__menu li a {
   font-size: 15px;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #fff;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
@@ -1162,7 +1192,19 @@ body {
   margin-bottom: 15px;
   font-size: 15px;
   line-height: 100%;
-  color: #FFFFFF;
+}
+.footer__questions li a {
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.footer__questions li a:hover {
+  color: #C1237F;
+}
+.footer__questions li a:hover .text-pink {
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .footer__social {
   margin-top: 30px;
@@ -1189,7 +1231,7 @@ body {
 .footer__text {
   font-size: 15px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .footer__consult {
   display: -webkit-box;
@@ -1209,7 +1251,7 @@ body {
           align-items: center;
   margin-top: 25px;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .footer__whatsapp svg {
   margin-right: 15px;
@@ -1227,7 +1269,7 @@ body {
 .footer__copyright {
   margin-top: 60px;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .footer__form {
   -ms-flex-item-align: end;
@@ -1248,7 +1290,7 @@ body {
   border: none;
   border-bottom: 1px solid #fff;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .footer__form form input::-webkit-input-placeholder {
   font-size: 15px;
@@ -1273,9 +1315,15 @@ body {
 .footer__form form .btn {
   margin-left: 25px;
   background: none;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #fff;
+}
+.footer__form form .btn:hover {
+  color: #000;
+}
+.footer__form form .btn:hover:before {
+  background-image: url(../img/arrow_black.svg);
 }
 
 .services {
@@ -1289,11 +1337,9 @@ body {
   margin-top: 30px;
 }
 .services__info .btn:before {
-  background-color: transparent;
   background-image: url(../img/arrow_black.svg);
 }
 .services__info .btn:hover:before {
-  right: 25px;
   background-image: url(../img/arrow_white.svg);
 }
 .services__items {
@@ -1368,7 +1414,7 @@ body {
   position: relative;
   font-size: 32px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .services__subtitle:after {
   content: "";
@@ -1420,10 +1466,9 @@ body {
 .price__item .btn {
   margin-top: 30px;
   background: #000;
-  color: #fff;
 }
-.price__item .btn:before {
-  background: url(../img/arrow_white.svg) no-repeat;
+.price__item .btn:hover:before {
+  background-image: url(../img/arrow_black.svg);
 }
 .price__item_center {
   padding: 80px;
@@ -1446,10 +1491,12 @@ body {
   background: #fff;
   font-size: 18px;
   line-height: 20px;
-  color: #000;
 }
 .price__item_center .btn:before {
   background-image: url(../img/arrow_black.svg);
+}
+.price__item_center .btn:hover:before {
+  background-image: url(../img/arrow_white.svg);
 }
 .price__icon {
   width: 100px;
@@ -2078,6 +2125,9 @@ body {
 .feedform input:first-child {
   margin-right: 20px;
 }
+.feedform input:focus {
+  border: 1px solid #C1237F;
+}
 .feedform textarea {
   margin-top: 20px;
   padding: 20px;
@@ -2088,15 +2138,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.55);
   border-radius: 15px;
 }
+.feedform textarea:focus {
+  border: 1px solid #C1237F;
+}
 .feedform .btn {
   margin-top: 25px;
   background-color: #000;
-  color: #fff;
-}
-.feedform .btn:hover {
-  color: #000;
-  -webkit-box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 60px #fff inset, 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 .feedform .btn:hover:before {
   background-image: url(../img/arrow_black.svg);
@@ -2461,6 +2508,7 @@ body {
     margin-right: 0px;
   }
   .header__menu li a {
+    font-size: 16px;
     line-height: 42px;
   }
   .header__menu li a:after {
@@ -2471,6 +2519,10 @@ body {
   }
   .header__social {
     margin-top: 30px;
+  }
+  .header__social a svg {
+    width: 30px;
+    height: 30px;
   }
   .header__burger {
     display: block;
@@ -2508,6 +2560,13 @@ body {
   .header__burger.active span:nth-child(3) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+  .header_fixed .header__menu li a {
+    font-size: 16px;
+  }
+  .header_fixed .header__social a svg {
+    width: 30px;
+    height: 30px;
   }
   .promo__box {
     position: relative;
@@ -3231,14 +3290,6 @@ body {
   .reviews .slick-dots li button {
     width: 10px;
     height: 10px;
-  }
-  .footer__social__items a svg {
-    width: 28px;
-    height: 28px;
-  }
-  .footer__whatsapp svg {
-    width: 28px;
-    height: 28px;
   }
   .services__info {
     margin-bottom: 10px;
