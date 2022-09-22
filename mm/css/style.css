@@ -2619,6 +2619,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 70px;
   }
   .contacts__map {
     width: 100%;
@@ -2867,6 +2868,12 @@ body {
   .article__recent .blog__info {
     padding: 20px 10px;
     width: 140px;
+  }
+  .contacts {
+    margin-top: 80px;
+  }
+  .contacts .section__title_large {
+    font-size: 36px;
   }
   .contacts__info {
     padding: 70px;
@@ -3289,6 +3296,15 @@ body {
   .article__recent .blog__img, .article__recent .blog__info {
     width: 50%;
   }
+  .contacts {
+    margin-top: 60px;
+  }
+  .contacts .section__title_large {
+    font-size: 32px;
+  }
+  .contacts__box {
+    margin-top: 60px;
+  }
   .contacts__map {
     height: 400px;
   }
@@ -3358,6 +3374,9 @@ body {
   }
   .contacts .feedform input:first-child {
     margin-right: 0;
+  }
+  .contacts .feedform .btn {
+    font-size: 14px;
   }
 }
 @media (max-width: 450px) {
