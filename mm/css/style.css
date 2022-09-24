@@ -511,7 +511,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #000;
-  background-image: url(../img/arrow_white.svg);
+  background-image: url(../img/icons/arrow_white.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -534,12 +534,13 @@ body {
 }
 .btn_white:hover {
   color: #fff;
-  -webkit-box-shadow: 0 0 0 60px #000 inset, 0 5px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 60px #000 inset, 0 5px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 50px #000 inset, 0 5px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 50px #000 inset, 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 .btn_white:hover:before {
   background-color: #fff;
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 .btn_black {
   color: #fff;
@@ -551,7 +552,7 @@ body {
 }
 .btn_black:hover:before {
   background-color: #000;
-  background-image: url(../img/arrow_white.svg);
+  background-image: url(../img/icons/arrow_white.svg);
 }
 
 .header__box {
@@ -755,11 +756,11 @@ body {
   margin-top: 30px;
 }
 .exp__info .btn:before {
-  background-image: url(../img/phone-icon.svg);
+  background-image: url(../img/icons/phone-icon.svg);
   background-size: 19px;
 }
 .exp__info .btn:hover:before {
-  background-image: url(../img/phone_black.svg);
+  background-image: url(../img/icons/phone_black.svg);
 }
 .exp__items {
   display: -webkit-box;
@@ -909,7 +910,7 @@ body {
           transform: translateX(-50%);
   width: 56px;
   height: 95px;
-  background: url(../img/question-sign.svg) no-repeat;
+  background: url(../img/icons/question-sign.svg) no-repeat;
 }
 
 .biography__box {
@@ -1075,7 +1076,7 @@ body {
   margin-right: 5px;
   width: 18px;
   height: 18px;
-  background: url(../img/star-fill.svg) no-repeat;
+  background: url(../img/icons/star-fill.svg) no-repeat;
   background-size: 100%;
 }
 .reviews__text {
@@ -1323,7 +1324,7 @@ body {
   color: #000;
 }
 .footer__form form .btn:hover:before {
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 
 .services {
@@ -1337,10 +1338,10 @@ body {
   margin-top: 30px;
 }
 .services__info .btn:before {
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 .services__info .btn:hover:before {
-  background-image: url(../img/arrow_white.svg);
+  background-image: url(../img/icons/arrow_white.svg);
 }
 .services__items {
   display: -webkit-box;
@@ -1434,7 +1435,7 @@ body {
   right: 35px;
   width: 27px;
   height: 27px;
-  background: url(../img/arrow_pink.svg) no-repeat;
+  background: url(../img/icons/arrow_pink.svg) no-repeat;
   background-size: 100%;
   opacity: 0;
   -webkit-transition: 0.3s all;
@@ -1468,7 +1469,7 @@ body {
   background: #000;
 }
 .price__item .btn:hover:before {
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 .price__item_center {
   padding: 80px;
@@ -1493,10 +1494,10 @@ body {
   line-height: 20px;
 }
 .price__item_center .btn:before {
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 .price__item_center .btn:hover:before {
-  background-image: url(../img/arrow_white.svg);
+  background-image: url(../img/icons/arrow_white.svg);
 }
 .price__icon {
   width: 100px;
@@ -1544,13 +1545,13 @@ body {
           transform: translateY(-50%);
   width: 15px;
   height: 12px;
-  background: url(../img/check.svg) no-repeat;
+  background: url(../img/icons/check.svg) no-repeat;
 }
 .price__list .price__cross {
   color: #9E9E9E;
 }
 .price__list .price__cross:before {
-  background: url(../img/cross.svg) no-repeat;
+  background: url(../img/icons/cross.svg) no-repeat;
   background-size: contain;
 }
 
@@ -1664,7 +1665,7 @@ body {
   display: block;
   width: 16px;
   height: 14px;
-  background: url(../img/folder_icon.svg) no-repeat;
+  background: url(../img/icons/folder_icon.svg) no-repeat;
 }
 .breadcrumb__item:not(:last-child):after {
   content: "●";
@@ -1849,7 +1850,7 @@ body {
   padding: 40px 0 0 40px;
   width: 90%;
   height: 110px;
-  background: url(../img/quote.svg) no-repeat;
+  background: url(../img/icons/quote.svg) no-repeat;
 }
 .article__subtitle {
   font-weight: 400;
@@ -1903,7 +1904,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
@@ -1917,13 +1918,13 @@ body {
   display: block;
   width: 42px;
   height: 42px;
-  background: url(../img/loupe.svg) no-repeat;
+  background: url(../img/icons/loupe.svg) no-repeat;
   background-size: 100%;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 .article__gallery__item:hover:before {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .article__gallery__item:hover:after {
   -webkit-transform: translate(-50%, -50%) scale(1.2, 1.2);
@@ -2041,9 +2042,14 @@ body {
   display: block;
   font-size: 20px;
   line-height: 100%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .contacts__phones a:last-child {
   margin-top: 15px;
+}
+.contacts__phones a:hover {
+  color: #C1237F;
 }
 .contacts__adress {
   display: -webkit-box;
@@ -2062,11 +2068,19 @@ body {
   display: flex;
   margin-top: 60px;
 }
+.contacts__social a {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
 .contacts__social a:not(:last-child) {
   margin-right: 25px;
 }
 .contacts__social a svg {
   width: 52px;
+}
+.contacts__social a:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .contacts__action {
   display: -webkit-box;
@@ -2146,7 +2160,7 @@ body {
   background-color: #000;
 }
 .feedform .btn:hover:before {
-  background-image: url(../img/arrow_black.svg);
+  background-image: url(../img/icons/arrow_black.svg);
 }
 
 .overlay {
@@ -2247,7 +2261,7 @@ body {
   display: block;
   width: 35px;
   height: 35px;
-  background: url(../img/check.svg) 50% 50% no-repeat;
+  background: url(../img/icons/check.svg) 50% 50% no-repeat;
   background-size: 19px;
   border-radius: 50%;
   border: 2px solid #C1237F;
